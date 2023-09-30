@@ -17,12 +17,15 @@
         exit();
     }
     printf("Conexão bem sucedida!");
-    $_retval = mysqli_select_db($_minha_conexao, 'ping_run');
+    
+    mysqli_select_db($_minha_conexao, 'ping_run');
+    $_SQL_comando = "SELECT status_local, status_wire FROM regitro_ping";
+    $_retval = mysqli_query($_minha_conexao, $_SQL_comando);
     if(! $_retval) {
         die('Não foi possível selecionar o banco de dados');
     }
     echo "</br>Banco de dados 'ping_run' selecionado!"
-
+    
 
 
     ?>
