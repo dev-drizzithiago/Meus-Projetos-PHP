@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Informações da INTERNET</title>
 </head>
+    <h1>status da internet</h1>
 <?php 
     $_dbhost = "localhost";
     $_dbuser = "root";
@@ -20,6 +21,6 @@
 
 ?>
 <body>
-    <h1>status da internet</h1>
+    
 </body>
 </html>
