@@ -11,15 +11,14 @@
     $_dbhost = "localhost";
     $_dbuser = "root";
     $_dbpass = "";
-    $minha_conexao = new mysqli($host, $_dbuser, $_dbpass);
+    $minha_conexao = new mysqli($_dbhost, $_dbuser, $_dbpass);
     if ($minha_conexao -> connect_errno) {
-        print("Falha na Conexão com o banco de dados");
+        print("Falha na Conexão com o banco de dados: %s</br>". $minha_conexao->connect_errno);
         exit();
     }
-    printf("Conexão bem sucedida!")
-
-
-?>
+    printf("Conexão bem sucedida!");
+    
+    ?>
 <body>
     
 </body>
