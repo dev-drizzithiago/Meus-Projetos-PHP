@@ -17,7 +17,14 @@
         exit();
     }
     printf("Conexão bem sucedida!");
-    $_retval = mysqli_select_db($_minha_conexao, )
+    $_retval = mysqli_select_db($_minha_conexao, 'ping_run');
+    if(! $_retval) {
+        die('Não foi possível selecionar o banco de dados');
+    }
+    echo "</br>Banco de dados 'ping_run' selecionado!"
+
+
+
     ?>
 <body>
     
