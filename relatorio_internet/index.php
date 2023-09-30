@@ -6,6 +6,19 @@
     <link rel="stylesheet" href="style.css">
     <title>Informações da INTERNET</title>
 </head>
+<?php 
+    $_dbhost = "localhost";
+    $_dbuser = "root";
+    $_dbpass = "";
+    $minha_conexao = new mysqli($host, $_dbuser, $_dbpass);
+    if ($minha_conexao -> connect_errno) {
+        print("Falha na Conexão com o banco de dados");
+        exit();
+    }
+    printf("Conexão bem sucedida!")
+
+
+?>
 <body>
     <h1>status da internet</h1>
 </body>
