@@ -32,7 +32,7 @@
     ?>
     <body>
     <main>
-    <h1>Status da internet</h1>
+    <h1 class="h1_html">Status da internet</h1>
         <?php 
         while($linha = mysqli_fetch_array($_retval_02, MYSQLI_ASSOC)) {
                 //echo "<p> DATA: : {$linha['_data']} </p> </br>".
@@ -40,7 +40,7 @@
                 //"<p> Status Internet: {$linha['status_wire']} </p> </br>".
                 //"---------------------------------------------</br>";
                 if ($linha['status_wire'] == 'internet_off') {
-                    printf("<h1>Sem ACESSO A INTERNET!</h1>". $linha['_data']);
+                    printf("<h1> &#128078  ---> ". $linha['_data']);
                 }
             } 
             ?>
