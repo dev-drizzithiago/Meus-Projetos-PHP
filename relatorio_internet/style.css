@@ -1,10 +1,16 @@
+@charset "UTF-8";
+
 body {
-    background-color: aquamarine;
+    background-color: rgb(96, 163, 202);
+}
+
+h1.h1_html {
+    align-self: auto;
 }
 
 h1 {
     color: black;
-    font-size: 14pt;
+    font-size: 20pt;
     align-items: center;
 }
 
