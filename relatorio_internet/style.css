@@ -16,6 +16,7 @@ h1 {
 }
 
 p {
+    text-align: justify;
     font-size: 16pt;
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
