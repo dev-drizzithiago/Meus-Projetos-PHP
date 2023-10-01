@@ -2,12 +2,12 @@
 
 body {
     background-image: url(./img/plano_fundo.jpg);
+    background-position: right top;
+    background-attachment: fixed;
     color: rgba(0,0,0,2);
 }
 
-h1.h1_html {
-    align-self: auto;
-}
+
 
 h1 {
     color: rgb(255, 255, 255);
