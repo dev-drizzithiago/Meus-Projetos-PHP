@@ -34,7 +34,7 @@
         echo "DATA: : {$linha['_data']} </br>".
         "Status Rede Local: {$linha['status_local']} </br>".
         "status Internet: {$linha['status_wire']} </br>".
-        "-------------------------------------";
+        "---------------------------------------------</br>";
     }
 
 
