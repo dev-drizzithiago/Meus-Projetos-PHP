@@ -24,7 +24,7 @@
     }
     
     mysqli_select_db($_minha_conexao, 'ping_run');
-    $_SQL_comando = "SELECT status_local, status_wire FROM registro_ping";
+    $_SQL_comando = "SELECT _data, status_local, status_wire FROM registro_ping";
     $_retval_02 = mysqli_query($_minha_conexao, $_SQL_comando);
     if(! $_retval_02) {
         die('</br>Não foi possível obter os dados </br>'. mysqli_error($_minha_conexao));
