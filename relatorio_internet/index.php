@@ -22,8 +22,7 @@
     if (!$_retval_01) {
         die("Não foi possivel encontrar o banco de dados </br>". mysqli_error($_minha_conexao));
     }
-    echo "</br>Banco de dados 'ping_run' selecionado!";
-
+    
     mysqli_select_db($_minha_conexao, 'ping_run');
     $_SQL_comando = "SELECT status_local, status_wire FROM regitro_ping";
     $_retval_02 = mysqli_query($_minha_conexao, $_SQL_comando);
