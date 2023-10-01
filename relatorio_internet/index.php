@@ -31,19 +31,19 @@
     }
     ?>
     <body>
-    <main>
-    <h1 class="h1_html">Status da internet</h1>
-        <?php 
-        while($linha = mysqli_fetch_array($_retval_02, MYSQLI_ASSOC)) {
-                //echo "<p> DATA: : {$linha['_data']} </p> </br>".
-                //"<p> Status Rede Local: {$linha['status_local']} </p> </br>".
-                //"<p> Status Internet: {$linha['status_wire']} </p> </br>".
-                //"---------------------------------------------</br>";
-                if ($linha['status_wire'] == 'internet_off') {
-                    printf("<h1> Status da internet: &#128078  - ". $linha['_data']);
-                }
-            } 
-            ?>
-    </main>
+        <main>
+        <h1 class="h1_html">Status da internet</h1>
+            <?php 
+            while($linha = mysqli_fetch_array($_retval_02, MYSQLI_ASSOC)) {
+                    //echo "<p> DATA: : {$linha['_data']} </p> </br>".
+                    //"<p> Status Rede Local: {$linha['status_local']} </p> </br>".
+                    //"<p> Status Internet: {$linha['status_wire']} </p> </br>".
+                    //"---------------------------------------------</br>";
+                    if ($linha['status_wire'] == 'internet_off') {
+                        printf("<h1> Status da internet: &#128078  - ". $linha['_data']);
+                    }
+                } 
+                ?>
+        </main>
     </body>
 </html>
