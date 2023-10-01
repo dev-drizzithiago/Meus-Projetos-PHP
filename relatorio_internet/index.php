@@ -39,6 +39,9 @@
                 "<p> Status Rede Local: {$linha['status_local']} </p> </br>".
                 "<p> Status Internet: {$linha['status_wire']} </p> </br>".
                 "---------------------------------------------</br>";
+                if ($linha['status_wire'] == 'internet_off') {
+                    printf("<h1>Sem ACESSO A INTERNET!</h1>");
+                }
             } 
             ?>
     </main>
