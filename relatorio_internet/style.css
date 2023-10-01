@@ -7,7 +7,10 @@ body {
     color: rgba(0,0,0,2);
 }
 
-
+main {
+    border-style:solid ;
+    text-align: center;
+}
 
 h1 {
     color: rgb(255, 255, 255);
