@@ -30,16 +30,15 @@
         die('</br>Não foi possível obter os dados </br>'. mysqli_error($_minha_conexao));
     }
     
-    while($linha = mysqli_fetch_array($_retval_02, MYSQLI_ASSOC)) {
-        echo "DATA: : {$linha['_data']} </br>".
-        "Status Rede Local: {$linha['status_local']} </br>".
-        "status Internet: {$linha['status_wire']} </br>".
-        "---------------------------------------------</br>";
-    }
-
-
+    
     ?>
 <body>
-    
+    <?php 
+    while($linha = mysqli_fetch_array($_retval_02, MYSQLI_ASSOC)) {
+            echo "DATA: : {$linha['_data']} </br>".
+            "Status Rede Local: {$linha['status_local']} </br>".
+            "status Internet: {$linha['status_wire']} </br>".
+        } 
+        ?>
 </body>
 </html>
