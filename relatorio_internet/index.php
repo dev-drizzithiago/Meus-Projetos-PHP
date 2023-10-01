@@ -40,7 +40,7 @@
                 //"<p> Status Internet: {$linha['status_wire']} </p> </br>".
                 //"---------------------------------------------</br>";
                 if ($linha['status_wire'] == 'internet_off') {
-                    printf("<h1> &#128078  ---> ". $linha['_data']);
+                    printf("<h1> Status da internet: &#128078  - ". $linha['_data']);
                 }
             } 
             ?>
