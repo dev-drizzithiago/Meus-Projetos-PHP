@@ -16,7 +16,7 @@
         print("Falha na Conexão com o banco de dados: %s</br>". $_minha_conexao->connect_errno);
         exit();
     }
-    printf("Conexão com bando de dados bem sucedida!");
+    printf("Conexão com bando de dados bem sucedida!</br>");
 
     $_retval_01 = mysqli_select_db($_minha_conexao, "ping_run");
     if (!$_retval_01) {
@@ -30,7 +30,12 @@
         die('</br>Não foi possível obter os dados </br>'. mysqli_error($_minha_conexao));
     }
     
-    
+    while($linha = mysqli_fetch_array($_retval_02, MYSQLI_ASSOC)) {
+        echo "DATA: : {$linha['_data']} </br>".
+        "Status Rede Local: {$linha['status_local']} </br>".
+        "status Internet: {$linha['status_wire']} </br>".
+        "-------------------------------------";
+    }
 
 
     ?>
