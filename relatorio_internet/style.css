@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body {
-    background-color: rgb(96, 163, 202);
+    background-image: url(./img/plano_fundo.jpg);
     color: rgba(0,0,0,2);
 }
 
@@ -10,12 +10,13 @@ h1.h1_html {
 }
 
 h1 {
-    color: black;
+    color: rgb(255, 255, 255);
     font-size: 20pt;
     align-items: center;
 }
 
 p {
+    color: aliceblue;
     text-align: justify;
     font-size: 16pt;
     font-family: 'Times New Roman', Times, serif;
