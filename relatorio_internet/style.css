@@ -23,7 +23,8 @@ h1 {
 
 p {
     color: aliceblue;
-    text-align: justify;
+    text-align: center;
+    margin: auto;
     font-size: 16pt;
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
