@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body {
-    background-image: url(./img/plano_fundo.jpg);
+    background-color: cadetblue;
     background-position: right top;
     background-attachment: fixed;
     color: rgba(0,0,0,2);
