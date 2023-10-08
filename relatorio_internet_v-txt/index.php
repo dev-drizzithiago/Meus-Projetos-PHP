@@ -22,7 +22,7 @@ date_default_timezone_set("America/Sao_Paulo");
             $_lista_local_on = file_get_contents($_local_registro_on);
             $_lista_local_array = explode("\n", $_lista_local_on);
             foreach($_lista_local_array as $_lista_itens_local_on) {
-                if ($_lista_itens_local_on == "")
+                echo $_lista_local_array;
                 
                 
                 
