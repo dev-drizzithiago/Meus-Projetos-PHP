@@ -12,8 +12,12 @@
 
         $_leitura_local_on = fopen("$_local_registro_on", "r");
         $_leitura_internet_on = fopen("$_internet_ping_on", "r");
-        echo fgets($_leitura_local_on);
-        echo fgets($_leitura_internet_on);
+        while(!feof($_leitura_local_on)){
+            echo fgetc($_leitura_local_on);
+        }
+        while(!feof($_internet_ping_on)) {
+            echo fgetc($_internet_ping_on);
+        }
     ?>    
 </body>
 </html>
