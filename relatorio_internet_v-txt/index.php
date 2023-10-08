@@ -7,7 +7,7 @@
 </head>
 <body>
     <?php 
-        $_local_registro_on = "registro_ping_local_on.log";
+        $_local_registro_on = "G:/Meu Drive/Estudos/Python/Arquivos de texto/Relatorio_internet/registro_ping_local_on.log";
         echo readfile("$_local_registro_on");
     ?>    
 </body>
