@@ -9,12 +9,16 @@
     <?php 
         $_local_registro_on = "registro_ping_local_on.txt";
         $_internet_ping_on = "registro_ping_internet_on.txt";
-        if(file_exists($_local_registro_on))
-        $_lista_local_on = file_get_contents($_local_registro_on);
-        $_lista_local_array = explode("\n", $_lista_local_on);
-        foreach($_lista_local_array as $_lista_itens_local_on) {
-            echo $_lista_itens_local_on. "</br>";
-        }        
+        if(file_exists($_local_registro_on)){
+            $_lista_local_on = file_get_contents($_local_registro_on);
+            $_lista_local_array = explode("\n", $_lista_local_on);
+            foreach($_lista_local_array as $_lista_itens_local_on) {
+                echo $_lista_itens_local_on. "</br>";
+            }        
+        } else {
+            $_lista_local_on = null;
+            echo "Arquivo de texto não existe!!";
+        }
     ?>    
 </body>
 </html>
