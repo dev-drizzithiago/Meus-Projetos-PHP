@@ -6,9 +6,10 @@ body {
 }
 
 main {
-    background-color: white;
+    background-color: rgb(247, 255, 134);
     text-align: center;
     border-style: solid;
+    border-radius: 50px;
     margin-left: 400px;
     margin-right: 400px;
 }
@@ -16,7 +17,8 @@ main {
 h1 {
     margin-left: 400px;
     margin-right: 400px;
-    border-radius: inherit;
+    border-style: solid;
+    border-radius: 50px;
     background-color: #eee;
     text-align: center;
 }
