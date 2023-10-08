@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="60">
     <title>Relatorio Internet_v-txt</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <?php
+date_default_timezone_set("America/Sao_Paulo");
     $_data_atual = date('H:i - d/m/Y');
-    header("Refresh:60");
     echo "<h1>Hora atual</br>$_data_atual</h1>";
 ?>
 <body>
@@ -21,9 +22,11 @@
             $_lista_local_on = file_get_contents($_local_registro_on);
             $_lista_local_array = explode("\n", $_lista_local_on);
             foreach($_lista_local_array as $_lista_itens_local_on) {
-                echo "<ul>";
-                echo "<li>$_lista_itens_local_on</li>". "</br>";
-                echo "</ul>";
+                if ($_lista_itens_local_on == "")
+                
+                
+                
+                
             }        
         } else {
             $_lista_local_on = null;
@@ -34,3 +37,11 @@
 </main>
 </body>
 </html>
+
+
+<!--scripts em pousa-->
+<?php 
+                //echo "<ul>";
+                //echo "<li>$_lista_itens_local_on</li>". "</br>";
+                //echo "</ul>";
+                ?>
