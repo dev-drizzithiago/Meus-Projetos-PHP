@@ -6,9 +6,12 @@
     <title>Relatorio Internet_v-txt</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<?php 
+    header("Refresh: 1; url = index.php");
+?>
 <body>
     <h1>STATUS DA INTERNET</h1>
-<main>
+<main class="principal">
     <?php 
         $_local_registro_on = "registro_ping_local_on.txt";
         $_internet_ping_on = "registro_ping_internet_on.txt";
@@ -26,6 +29,6 @@
             echo "<p>Inicie o problema para obter as informações da sua rede</p>";
         }
     ?>  
-</main>  
+</main>
 </body>
 </html>
