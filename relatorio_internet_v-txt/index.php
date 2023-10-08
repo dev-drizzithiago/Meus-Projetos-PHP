@@ -6,8 +6,10 @@
     <title>Relatorio Internet_v-txt</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<?php 
-    header("Refresh:1");
+<?php
+    $_data_atual = date('H:i - d/m/Y');
+    header("Refresh:60");
+    echo "<h1>Hora atual</br>$_data_atual</h1>";
 ?>
 <body>
     <h1>STATUS DA INTERNET</h1>
