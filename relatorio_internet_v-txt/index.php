@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <?php 
-    header("Refresh: 1; url = index.php");
+    header("Refresh:1");
 ?>
 <body>
     <h1>STATUS DA INTERNET</h1>
