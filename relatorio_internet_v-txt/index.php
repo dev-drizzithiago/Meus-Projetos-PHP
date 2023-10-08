@@ -9,7 +9,11 @@
     <?php 
         $_local_registro_on = "C:/wamp64/www/Meus Projetos/Meus-Projetos-PHP/relatorio_internet_v-txt/registro_ping_local_on.txt";
         $_internet_ping_on = "C:/wamp64/www/Meus Projetos/Meus-Projetos-PHP/relatorio_internet_v-txt/registro_ping_internet_on.txt";
-        echo readfile("$_local_registro_on");
+
+        $_leitura_local_on = fopen("$_local_registro_on", "r");
+        $_leitura_internet_on = fopen("$_internet_ping_on", "r");
+        echo fgets($_leitura_local_on);
+        echo fgets($_leitura_internet_on);
     ?>    
 </body>
 </html>
