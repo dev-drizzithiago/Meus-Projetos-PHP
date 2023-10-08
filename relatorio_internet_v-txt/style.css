@@ -2,6 +2,7 @@
 
 body {
     background-color: blueviolet;
+    
 }
 
 main {
@@ -10,4 +11,12 @@ main {
     border-style: solid;
     margin-left: 400px;
     margin-right: 400px;
+}
+
+h1 {
+    margin-left: 400px;
+    margin-right: 400px;
+    border-radius: inherit;
+    background-color: #eee;
+    text-align: center;
 }
