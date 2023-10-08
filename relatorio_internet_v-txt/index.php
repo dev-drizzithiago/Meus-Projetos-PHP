@@ -22,14 +22,10 @@ date_default_timezone_set("America/Sao_Paulo");
             $_lista_local_on = file_get_contents($_local_registro_on);
             $_lista_local_array = explode("-", $_lista_local_on);
             foreach($_lista_local_array as $_lista_itens_local_on) {
-                $_teste = trim($_lista_local_array[0]);
+                $_teste = trim($_lista_local_array[1]);
                 if ($_teste == "Ativo") {
-                    echo "teste </br>";
-                }
-                
-                
-                
-                
+                    echo "<p>&#128077</p></br>";
+                } 
             }        
         } else {
             $_lista_local_on = null;
