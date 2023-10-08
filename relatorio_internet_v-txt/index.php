@@ -17,7 +17,7 @@
             $_lista_local_array = explode("\n", $_lista_local_on);
             foreach($_lista_local_array as $_lista_itens_local_on) {
                 echo "<ul>";
-                echo "<li><p>$_lista_itens_local_on</p></li>". "</br>";
+                echo "<li>$_lista_itens_local_on</li>". "</br>";
                 echo "</ul>";
             }        
         } else {
