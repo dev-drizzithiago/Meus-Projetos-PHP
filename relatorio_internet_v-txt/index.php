@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1>STATUS DA INTERNET</h1>
 <main>
     <?php 
         $_local_registro_on = "registro_ping_local_on.txt";
@@ -15,7 +16,9 @@
             $_lista_local_on = file_get_contents($_local_registro_on);
             $_lista_local_array = explode("\n", $_lista_local_on);
             foreach($_lista_local_array as $_lista_itens_local_on) {
-                //echo $_lista_itens_local_on. "</br>";
+                echo "<ul>";
+                echo "<li><p>$_lista_itens_local_on</p></li>". "</br>";
+                echo "</ul>";
             }        
         } else {
             $_lista_local_on = null;
