@@ -13,18 +13,19 @@ date_default_timezone_set("America/Sao_Paulo");
     echo "<h1>Hora atual</br>$_data_atual</h1>";
 ?>
 <body>
-    <h1>STATUS DA INTERNET</h1>
+    <h1>STATUS DA REDE LOCAL</h1>
 <main class="principal">
     <?php 
         $_local_registro_on = "registro_ping_local_on.txt";
         $_internet_ping_on = "registro_ping_internet_on.txt";
         if(file_exists($_local_registro_on)){
             $_lista_local_on = file_get_contents($_local_registro_on);
-            $_lista_local_array = explode("-", $_lista_local_on);
+            $_lista_local_array = explode("\n", $_lista_local_on);
             foreach($_lista_local_array as $_lista_itens_local_on) {
-                $_teste = trim($_lista_local_array[1]);
-                if ($_teste == "Ativo") {
-                    echo "<p>&#128077</p></br>";
+                echo $_lista_itens_local_on."</br>";
+                $_status_rede_on = trim($_lista_local_array[1]);
+                if ($_status_rede_on == "Ativo") {
+                    echo "&#128077</br>";
                 } 
             }        
         } else {
