@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="60">
+    <meta http-equiv="refresh" content="30">
     <title>Relatorio Internet_v-txt</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -24,9 +24,7 @@ date_default_timezone_set("America/Sao_Paulo");
             foreach($_lista_local_array as $_lista_itens_local_on) {
                 echo $_lista_itens_local_on."</br>";
                 $_status_rede_on = trim($_lista_local_array[1]);
-                if ($_status_rede_on == "Ativo") {
-                    echo "&#128077</br>";
-                } 
+                echo $_status_rede_on;
             }        
         } else {
             $_lista_local_on = null;
