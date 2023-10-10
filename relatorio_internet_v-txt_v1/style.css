@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+body {
+    background-color: blueviolet;
+    
+}
+
+main {
+    background-color: rgb(247, 255, 134);
+    text-align: center;
+    border-style: solid;
+    border-radius: 50px;
+    margin-left: 400px;
+    margin-right: 400px;
+}
+
+h1 {
+    margin-left: 400px;
+    margin-right: 400px;
+    border-style: solid;
+    border-radius: 50px;
+    background-color: rgb(247, 255, 134);
+    text-align: center;
+}
+p {
+    font-size: 100px;
+}
