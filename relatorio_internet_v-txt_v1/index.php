@@ -20,12 +20,13 @@ date_default_timezone_set("America/Sao_Paulo");
         $_internet_ping_on = "registro_ping_internet_on.txt";
         if(file_exists($_local_registro_on)){
             $_lista_local_on = file_get_contents($_local_registro_on);
-            $_lista_local_array = explode("\n", $_lista_local_on);
-            foreach($_lista_local_array as $_lista_itens_local_on) {
-                echo $_lista_itens_local_on."</br>";
-                $_status_rede_on = trim($_lista_local_array[1]);
-                echo $_status_rede_on;
-            }        
+            $_lista_local_array = explode("-", $_lista_local_on);
+            $_status_rede_on = $_lista_local_array[1];
+            echo $_status_rede_on;
+            //foreach($_status_rede_on as $_lista_itens_local_on) {}
+            echo $_status_rede_on."</br>";
+                
+                    
         } else {
             $_lista_local_on = null;
             echo "<p>Não foi encontrado nenhum arquivo de registro </br></p>";
