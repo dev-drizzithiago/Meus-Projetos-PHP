@@ -26,7 +26,7 @@ date_default_timezone_set("America/Sao_Paulo");
             //foreach($_status_rede_on as $_lista_itens_local_on) {}
             echo $_status_rede_on."</br>";
                 
-                    
+                
         } else {
             $_lista_local_on = null;
             echo "<p>Não foi encontrado nenhum arquivo de registro </br></p>";
