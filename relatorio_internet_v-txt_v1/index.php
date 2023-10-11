@@ -24,8 +24,11 @@ date_default_timezone_set("America/Sao_Paulo");
             $_status_rede_on = $_lista_local_array[1];
             //echo $_status_rede_on;
             //foreach($_status_rede_on as $_lista_itens_local_on) {}
-            echo $_status_rede_on."</br>";
-                
+            if ($_status_rede_on == " Ativo ") {
+                echo $_status_rede_on."</br>";
+            } else {
+                echo "teste";
+            }
                 
         } else {
             $_lista_local_on = null;
