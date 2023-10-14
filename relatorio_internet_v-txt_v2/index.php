@@ -7,11 +7,17 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<?php 
     
+
+
+?>
+
+<body>
     <main>
-
-
+        <?php 
+        
+        ?>
     </main>
 </body>
 </html>
