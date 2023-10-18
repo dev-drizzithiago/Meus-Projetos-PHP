@@ -2,11 +2,11 @@
 
 
 body {
-    background-color: goldenrod;
+    background-color: rgb(255, 153, 0);
 }
 
 main {
-    background-color: white;
+    background-color: rgb(5, 0, 0);
     border: inset;
     border-radius: 50px;
     margin-left: 400px;
@@ -15,16 +15,25 @@ main {
 }
 
 div.div_lan {
+    background-color: rgb(198, 206, 255);
     text-align: center;
     border: inset #aaa; 
     border-radius: 50px;
     margin-top: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
 
 }
 
 div.div_wan {
+    background-color: rgb(198, 206, 255);
     text-align: center;
     border: inset #aaa;
     border-radius: 50px;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
     margin-bottom: 5px;
+
 }
