@@ -4,3 +4,14 @@
 body {
     background-color: goldenrod;
 }
+
+main {
+    background-color: white;
+    border: inset;
+    margin: auto;
+    padding: 2px solid #aaa;
+}
+
+div.div_lan {
+    text-align: center;    
+}
