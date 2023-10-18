@@ -7,6 +7,11 @@ body {
 
 main {
     background-color: white;
-    border: 1px solid black;
+    border: inset;
     margin: auto;
+    padding: 2px solid #aaa;
+}
+
+div.div_lan {
+    text-align: center;    
 }
