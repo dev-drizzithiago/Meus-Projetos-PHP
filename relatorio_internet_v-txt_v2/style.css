@@ -8,10 +8,23 @@ body {
 main {
     background-color: white;
     border: inset;
-    margin: auto;
+    border-radius: 50px;
+    margin-left: 400px;
+    margin-right: 400px;    
     padding: 2px solid #aaa;
 }
 
 div.div_lan {
-    text-align: center;    
+    text-align: center;
+    border: inset #aaa; 
+    border-radius: 50px;
+    margin-top: 5px;
+
+}
+
+div.div_wan {
+    text-align: center;
+    border: inset #aaa;
+    border-radius: 50px;
+    margin-bottom: 5px;
 }
