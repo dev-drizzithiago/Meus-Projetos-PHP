@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="10">
     <title>Monitoramento</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -13,10 +14,19 @@
     $_local_arq_WAN = "_status_WAN.log";
 
     // Transformando os dados em array
+    if (file_exists($_local_arq_LAN)) {
     $_valor_status_array_LAN = file_get_contents ($_local_arq_LAN);
-    $_valor_status_array_WAN = file_get_contents($_local_arq_WAN);
     $_status_LAN = explode("-", $_valor_status_array_LAN);
+    } else {
+        $_status_WAN = "xx - xx - <desconhecido>";
+    }
+
+    if (file_exists($_local_arq_WAN)) {
+    $_valor_status_array_WAN = file_get_contents($_local_arq_WAN);
     $_status_WAN = explode("-", $_valor_status_array_WAN);
+    }  else {
+        $_status_WAN = "xx - xx - <desconhecido>";
+    }
 ?>
 <body>
     <main>        
