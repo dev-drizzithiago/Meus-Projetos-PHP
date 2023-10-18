@@ -6,7 +6,7 @@ body {
 }
 
 main {
-    background-color: #c0c0c0;
+    background-color: #6a6a6a;
     border: inset;
     border-radius: 50px;
     margin-left: 400px;
@@ -15,7 +15,7 @@ main {
 }
 
 div.div_lan {
-    background-color: rgb(198, 206, 255);
+    background-color: #d3d3d3;
     text-align: center;
     border: inset #aaa; 
     border-radius: 50px;
@@ -27,7 +27,7 @@ div.div_lan {
 }
 
 div.div_wan {
-    background-color: rgb(198, 206, 255);
+    background-color: #d3d3d3;
     text-align: center;
     border: inset #aaa;
     border-radius: 50px;
