@@ -2,11 +2,11 @@
 
 
 body {
-    background-color: rgb(255, 153, 0);
+    background-color: #808080 ;
 }
 
 main {
-    background-color: rgb(5, 0, 0);
+    background-color: #c0c0c0;
     border: inset;
     border-radius: 50px;
     margin-left: 400px;
