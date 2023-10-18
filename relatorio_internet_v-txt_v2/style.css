@@ -4,3 +4,9 @@
 body {
     background-color: goldenrod;
 }
+
+main {
+    background-color: white;
+    border: 1px solid black;
+    margin: auto;
+}
