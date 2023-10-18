@@ -34,9 +34,9 @@
         <h1>Status da Rede Local</h1>
             <?=$_status_LAN[2]?>   
 
-        </div>
-        <h1>Status da internet</h1>
+        </div>        
         <div class="div_wan">
+        <h1>Status da internet</h1>
             <?=$_status_WAN[2]?>
         </div>
     </main>
