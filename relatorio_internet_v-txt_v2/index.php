@@ -15,12 +15,12 @@
     $_status_LAN = explode("-", $_valor_status_array_LAN);
     $_status_WAN = explode("-", $_valor_status_array_WAN);
 ?>
-
 <body>
     <main>
+        <h1>Monitoramento</h1>
         <div>
         <?php 
-            echo "$_status_LAN";
+            print_r("$_status_LAN[0]");
         ?>
         </div>
     </main>
