@@ -15,8 +15,8 @@
 
     // Variaveis data/hora
     date_default_timezone_set('America/Sao_Paulo');
-    $_data_atual = date("d/m/Y");
-    $_hora_atual = date("h:m:s");
+        $_data_atual = date("d/m/Y");
+        $_hora_atual = date("h:i");
 
     // Variaveis de local arquivo
     $_local_arq_LAN = "_status_LAN.log";
@@ -44,8 +44,10 @@
         $_status_WAN[2] = "DESCONHECIDO";
     }
 ?>
+<!--img src="/relatorio_internet_v-txt_v2/img/img_001_ping_v2_off.jpg" alt="OFF"-->
+<!--CORPO HTML-->
 <body>
-    <!--img src="/relatorio_internet_v-txt_v2/img/img_001_ping_v2_off.jpg" alt="OFF"-->
+    
 <main>
     <div chass="div_data">
         <?="<h1>$_data_atual</h1>"?>
