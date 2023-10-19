@@ -19,10 +19,10 @@ div.div_lan {
     text-align: center;
     border: inset #aaa; 
     border-radius: 50px;
-    margin-top: 5px;
-    margin-right: 5px;
-    margin-left: 5px;
-    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
 
 }
 
@@ -31,9 +31,20 @@ div.div_wan {
     text-align: center;
     border: inset #aaa;
     border-radius: 50px;
-    margin-top: 5px;
-    margin-right: 5px;
-    margin-left: 5px;
-    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
 
+}
+
+div.div_data {
+    background-color: #ffffff;
+    text-align: center;
+    border: inset #aaa;
+    border-radius: 50px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
 }
