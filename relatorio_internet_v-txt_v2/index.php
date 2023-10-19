@@ -35,7 +35,7 @@
     $_valor_hora_array_LAN = explode(':', $_valor_horario_LAN);
     $_valor_hora_LAN = $_valor_hora_array_LAN[0];
     $_valor_minu_LAN = $_valor_hora_array_LAN[1];
-    $_valor_segu_LAN = $_valor_hora_array_LAN[3];
+    $_valor_segu_LAN = $_valor_hora_array_LAN[2];
     } else {
         $_status_LAN[2] = "DESCONHECIDO";
     }
@@ -52,7 +52,7 @@
     $_valor_hora_array_WAN = explode(':', $_valor_horario_WAN);
     $_valor_hora_WAN = $_valor_hora_array_WAN[0];
     $_valor_minu_WAN = $_valor_hora_array_WAN[1];
-    $_valor_segu_WAN = $_valor_hora_array_WAN[3];
+    $_valor_segu_WAN = $_valor_hora_array_WAN[2];
     }  else {
         $_status_WAN[2] = "DESCONHECIDO";
     }
@@ -85,7 +85,9 @@
                 echo '<img src="img/img_003_ping_v2_on.jpg">';
             } elseif ($_status_WAN == "INATIVO") {
                 echo '<img src="img/img_003_ping_v2_off.jpg">';
-            } elseif ()
+            } elseif ($_valor_hora.$_valor_minu_WAN < $_valor_hora.$_valor_minu) {
+                echo "<img src='img/img_003_ping_v2_neutro.jpg'>";
+            }
 
         ?>
     </div>
