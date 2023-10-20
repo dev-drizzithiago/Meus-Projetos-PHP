@@ -16,8 +16,8 @@
     // Variaveis data/hora
     date_default_timezone_set('America/Sao_Paulo');
         $_data_atual_global = date("d/m/Y");
-        $_hora_atual_global = date("h:i");
-        $_valor_hora_global = date("h");
+        $_hora_atual_global = date("H:i");
+        $_valor_hora_global = date("H");
         $_valor_minu_global = date("i");
 
     // Variaveis de local arquivo
@@ -61,7 +61,7 @@
 <body>
     
 <main>
-    <div chass="div_data">
+    <div class="div_data">
         <?="$_data_atual_global"?>
         <?="$_hora_atual_global"?>
     </div>
@@ -88,9 +88,7 @@
                 echo '<img src="img/img_003_ping_v2_off.jpg">';
             } elseif ($_valor_hora_WAN.$_valor_minu_WAN < $_valor_hora_global.$_valor_minu_global) {
                 echo "<img src='img/img_003_ping_v2_neutro.jpg'>";
-            }
-            echo $_valor_hora_global.$_valor_minu_global;
-            echo $_valor_hora_WAN.$_valor_minu_WAN;
+            }   
         ?>
     </div>
 </main>
