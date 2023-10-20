@@ -68,7 +68,7 @@
     </div>
 
     <div class="div_lan">
-    <h1>Status da Rede Local(LAN)</h1>
+    <h1 class="h1_lan">Status da Rede Local (LAN)</h1>
         <?php
             if ($_valor_status_LAN == " ATIVO") {
                 if ($_valor_hora_LAN.$_valor_minu_LAN < $_valor_hora_global.$_valor_minu_global) {
@@ -89,7 +89,7 @@
     </div>
 
     <div class="div_wan">
-    <h1>Status da internet(WAN)</h1>
+    <h1 class="h1_wan">Status da internet (WAN)</h1>
     <?php
             if ($_valor_status_WAN == " ATIVO") {
                 if ($_valor_hora_WAN.$_valor_minu_WAN < $_valor_hora_global.$_valor_minu_global) {
