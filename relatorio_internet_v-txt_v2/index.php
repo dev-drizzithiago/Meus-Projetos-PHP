@@ -63,8 +63,8 @@
 <main>
     <div class="div_data">
         <h1>Hora Certa</h1>
-        <?="$_data_atual_global"?>
-        <?="$_hora_atual_global"?>
+        <?="<h2>$_data_atual_global</h2>"?>
+        <?="<h2>$_hora_atual_global</h2>"?>
     </div>
 
     <div class="div_lan">
