@@ -7,7 +7,7 @@ body {
 
 main {
     background-color: #6a6a6a;
-    border: inset #aaa;
+    border: inset #000000;
     padding-left: 2px 2px 2px 2px;
     border-radius: 50px;
     margin-left: 300px;
@@ -20,7 +20,7 @@ div.div_data {
     background-color: #ffffff;
     text-align: center;
     padding-left: 2px 2px 2px 2px;
-    border: inset #aaa;     
+    border: inset #000000;     
     border-radius: 50px;
     margin-top: 1px;
     margin-right: 1px;
@@ -32,7 +32,7 @@ div.div_lan {
     background-color: #ffffff;
     text-align: center;
     padding-left: 2px 2px 2px 2px;
-    border: inset #aaa;
+    border: inset #000000;
     border-radius: 50px;
     margin-top: 1px;
     margin-right: 1px;
