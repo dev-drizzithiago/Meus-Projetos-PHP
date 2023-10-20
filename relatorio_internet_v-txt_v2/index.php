@@ -37,7 +37,7 @@
     $_valor_minu_LAN = $_valor_hora_array_LAN[1];
     $_valor_segu_LAN = $_valor_hora_array_LAN[2];
     } else {
-        $_status_LAN[2] = "DESCONHECIDO";
+        $_valor_status_LAN[2] = "DESCONHECIDO";
     }
 
     // Transformando os dados da WAN em array
@@ -53,7 +53,7 @@
     $_valor_minu_WAN = $_valor_hora_array_WAN[1];
     $_valor_segu_WAN = $_valor_hora_array_WAN[2];
     }  else {
-        $_status_WAN[2] = "DESCONHECIDO";
+        $_valor_status_WAN[2] = "DESCONHECIDO";
     }
 ?>
 <!--img src="/relatorio_internet_v-txt_v2/img/img_001_ping_v2_off.jpg" alt="OFF"-->
@@ -76,12 +76,15 @@
                 } else {
                     echo '<img src="img/img_003_ping_v2_on.jpg">'; 
                 }
-            } elseif ($_valor_status_LAN == " INATIVO")
+            } elseif ($_valor_status_LAN == " INATIVO") {
                 if ($_valor_hora_LAN.$_valor_minu_LAN < $_valor_hora_global.$_valor_minu_global) {
                     echo '<img src="img/img_003_ping_v2_neutro.jpg">';
                 } else {
                     echo '<img src="img/img_003_ping_v2_off.jpg">';
                 }
+            }else {
+                echo '<img src="img/img_003_ping_v2_neutro.jpg">';
+            }
         ?>
     </div>
 
@@ -94,13 +97,16 @@
                 } else {
                     echo '<img src="img/img_003_ping_v2_on.jpg">';
                 }
-            } elseif ($_status_WAN == " INATIVO") {
+            } elseif ($_valor_status_WAN == " INATIVO") {
                 if ($_valor_hora_WAN.$_valor_minu_WAN < $_valor_hora_global.$_valor_minu_global) {
                     echo '<img src="img/img_003_ping_v2_neutro.jpg">';
                 } else {                    
-                echo '<img src="img/img_003_ping_v2_off.jpg">';
+                    echo '<img src="img/img_003_ping_v2_off.jpg">';
                 } 
+            } else {
+                echo '<img src="img/img_003_ping_v2_neutro.jpg">';
             }
+            
         ?>
     </div>
 </main>
