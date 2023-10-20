@@ -8,7 +8,6 @@ body {
 main {
     background-color: #6a6a6a;
     border: 3px inset #000000;
-    padding-left: 2px 2px 2px 2px;
     border-radius: 50px;
     margin-left: 300px;
     margin-right: 300px;    
@@ -19,7 +18,6 @@ main {
 div.div_data {
     background-color: #ffffff;
     text-align: center;
-    padding-left: 2px 2px 2px 2px;
     border: 3px inset #000000;     
     border-radius: 50px;
     margin-top: 1px;
@@ -31,7 +29,6 @@ div.div_data {
 div.div_lan {
     background-color: #ffffff;
     text-align: center;
-    padding-left: 2px 2px 2px 2px;
     border: 3px inset #000000;
     border-radius: 50px;
     margin-top: 1px;
@@ -43,7 +40,6 @@ div.div_lan {
 div.div_wan {
     background-color: #ffffff;
     text-align: center;
-    padding-left: 2px 2px 2px 2px;
     border: 3px inset #000000; 
     border-radius: 50px;
     margin-top: 1px;
