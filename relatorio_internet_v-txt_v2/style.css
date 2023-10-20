@@ -29,7 +29,7 @@ div.div_lan {
 div.div_wan {
     background-color: #ffffff;
     text-align: center;
-    border: inset #aaa;
+    border: inset #aaa; 
     border-radius: 50px;
     margin-top: 10px;
     margin-right: 10px;
@@ -41,7 +41,7 @@ div.div_wan {
 div.div_data {
     background-color: #ffffff;
     text-align: center;
-    border: inset #aaa;
+    border: inset #aaa; 
     border-radius: 50px;
     margin-top: 10px;
     margin-right: 10px;
