@@ -16,7 +16,8 @@ main {
 
 
 div.div_data {
-    background-color: #93fbff;
+    outline-style: inset white;
+    background-color: #ffffff;
     text-align: center;
     border: 3px inset #000000;     
     border-radius: 50px;
