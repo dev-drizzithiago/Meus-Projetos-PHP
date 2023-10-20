@@ -16,15 +16,14 @@ main {
 
 
 div.div_data {
-    outline-style: inset white;
     background-color: #ffffff;
     text-align: center;
     border: 3px inset #000000;     
     border-radius: 50px;
-    margin-top: 1px;
-    margin-right: 1px;
-    margin-left: 1px;
-    margin-bottom: 1px;
+    margin-top: 10px;
+    margin-right: 200px;
+    margin-left: 200px;
+    margin-bottom: 10px;
 }
 
 div.div_lan {
@@ -32,10 +31,10 @@ div.div_lan {
     text-align: center;
     border: 3px inset #000000;
     border-radius: 50px;
-    margin-top: 1px;
-    margin-right: 1px;
-    margin-left: 1px;
-    margin-bottom: 1px;
+    margin-top: 10px;
+    margin-right: 150px;
+    margin-left: 150px;
+    margin-bottom: 10px;
 }
 
 div.div_wan {
@@ -43,9 +42,9 @@ div.div_wan {
     text-align: center;
     border: 3px inset #000000; 
     border-radius: 50px;
-    margin-top: 1px;
-    margin-right: 1px;
-    margin-left: 1px;
-    margin-bottom: 1px;
+    margin-top: 10px;
+    margin-right: 150px;
+    margin-left: 150px;
+    margin-bottom: 10px;
 }
 
