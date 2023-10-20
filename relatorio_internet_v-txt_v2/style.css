@@ -9,42 +9,54 @@ main {
     background-color: #6a6a6a;
     border: inset;
     border-radius: 50px;
-    margin-left: 400px;
-    margin-right: 400px;    
+    margin-left: 300px;
+    margin-right: 300px;    
     padding: 2px solid #aaa;
+}
+
+
+div.div_data {
+    background-color: #ffffff;
+    text-align: center;
+    border: inset #aaa; 
+    border-top: 5px;
+    border-left: 5px;
+    border-right: 5px;
+    border-bottom: 5px;
+    border-radius: 50px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
 }
 
 div.div_lan {
     background-color: #ffffff;
     text-align: center;
     border: inset #aaa; 
+    border-top: 5px;
+    border-left: 5px;
+    border-right: 5px;
+    border-bottom: 5px;
     border-radius: 50px;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-right: 10px;
     margin-left: 10px;
-    margin-bottom: 10px;
-
+    margin-bottom: 20px;
 }
 
 div.div_wan {
     background-color: #ffffff;
     text-align: center;
-    border: inset #aaa; 
+    border: #aaa; 
+    border-top: 5px;
+    border-left: 5px;
+    border-right: 5px;
+    border-bottom: 5px;
     border-radius: 50px;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-right: 10px;
     margin-left: 10px;
-    margin-bottom: 10px;
-
+    margin-bottom: 20px;
 }
 
-div.div_data {
-    background-color: #ffffff;
-    text-align: center;
-    border: inset #aaa; 
-    border-radius: 50px;
-    margin-top: 10px;
-    margin-right: 10px;
-    margin-left: 10px;
-    margin-bottom: 10px;
-}
