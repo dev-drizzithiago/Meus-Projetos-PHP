@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<?php 
+<?php // Processo de todos o site
     // Varias Globais
     $_contato_lan = 0;
     $_contato_wan = 0;
@@ -58,12 +58,9 @@
 ?>
 <!--img src="/relatorio_internet_v-txt_v2/img/img_001_ping_v2_off.jpg" alt="OFF"-->
 <!--CORPO HTML-->
-<body>
-    
+<body>    
 <main>
-    
-
-    <section class="div_lan">
+    <div class="div_lan">
     <h1 id="h1_lan">Status da Rede Local (LAN)</h1>
         <?php
             if ($_valor_status_LAN == " ATIVO") {
@@ -82,9 +79,9 @@
                 echo '<img src="img/img_003_ping_v2_neutro.jpg">';
             }
         ?>
-    </section>
+    </div>
 
-    <footer class="div_wan">
+    <div class="div_wan">
     <h1 id="h1_wan">Status da internet (WAN)</h1>
     <?php
             if ($_valor_status_WAN == " ATIVO") {
@@ -104,13 +101,13 @@
             }
             
         ?>
-    </footer>    
+    </div>    
 
-    <footer class="div_data">
-        <h1 id="h1_hora_certa" >Hora Certa</h1>
+    <div class="div_data">
+        <h1 class="h1_hora_certa">Hora Certa</h1>
         <?="<h2>$_data_atual_global</h2>"?>
         <?="<h3>$_hora_atual_global</h3>"?>
-    </footer>
+        </div>
 
 </main>
 </body>
