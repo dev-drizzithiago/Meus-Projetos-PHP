@@ -14,7 +14,7 @@ main {
     padding: 2px solid #aaa;
 }
 
-section#div_lan {
+section.div_lan {
     display: block;
     width: 400px;
     background-color: #ffffff;
@@ -27,7 +27,7 @@ section#div_lan {
     margin-bottom: 10px;
 }
 
-aside#div_wan {
+aside.div_wan {
     display: block;
     width: 400px;
     background-color: #ffffff;
@@ -40,7 +40,7 @@ aside#div_wan {
     margin-bottom: 10px;
 }
 
-footer#div_data {
+footer.div_data {
     display: block;
     width: 40px;
     background-color: #cecdcd;
