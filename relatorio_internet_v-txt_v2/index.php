@@ -63,7 +63,7 @@
 <main>
     
 
-    <section id="div_lan">
+    <section class="div_lan">
     <h1 id="h1_lan">Status da Rede Local (LAN)</h1>
         <?php
             if ($_valor_status_LAN == " ATIVO") {
@@ -84,7 +84,7 @@
         ?>
     </section>
 
-    <footer id="div_wan">
+    <footer class="div_wan">
     <h1 id="h1_wan">Status da internet (WAN)</h1>
     <?php
             if ($_valor_status_WAN == " ATIVO") {
@@ -106,10 +106,10 @@
         ?>
     </footer>    
 
-    <footer id="div_data">
+    <footer class="div_data">
         <h1 id="h1_hora_certa" >Hora Certa</h1>
         <?="<h2>$_data_atual_global</h2>"?>
-        <?="<h2>$_hora_atual_global</h2>"?>
+        <?="<h3>$_hora_atual_global</h3>"?>
     </footer>
 
 </main>
