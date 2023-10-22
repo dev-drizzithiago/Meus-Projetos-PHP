@@ -28,6 +28,7 @@ div.div_lan {
 
 div.div_wan {
     display: block;
+    float: right;
     background-color: #ffffff;
     text-align: center;
     border: 3px inset #000000; 
@@ -40,6 +41,7 @@ div.div_wan {
 
 div.div_data {
     display: block;
+    float: left;
     background-color: #cecdcd;
     text-align: center;
     border: 3px inset #000000;     
