@@ -49,6 +49,8 @@ div.div_wan {
 }
 
 footer {
+    display: block;
+    width: auto;
     background-color: #ffffff;
     text-align: center; 
     border: 3px inset #000000;
