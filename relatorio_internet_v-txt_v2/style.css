@@ -53,7 +53,7 @@ footer.div_data {
     margin-bottom: 10px;
 }
 
-h1#h1_lan {
+h1.h1_lan {
     background-color: #eeeded;
     text-align: center;
     border: 1px inset black;
@@ -61,7 +61,7 @@ h1#h1_lan {
     margin-left: 10px;
     margin-right: 10px;
 }
-h1#h1_wan {
+h1.h1_wan {
     background-color: #eeeded;
     text-align: center;
     border: 1px inset black;
