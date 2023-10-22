@@ -61,14 +61,10 @@
 <body>
     
 <main>
-    <div class="div_data">
-        <h1>Hora Certa</h1>
-        <?="<h2>$_data_atual_global</h2>"?>
-        <?="<h2>$_hora_atual_global</h2>"?>
-    </div>
+    
 
-    <div class="div_lan">
-    <h1 class="h1_lan">Status da Rede Local (LAN)</h1>
+    <section id="div_lan">
+    <h1 id="h1_lan">Status da Rede Local (LAN)</h1>
         <?php
             if ($_valor_status_LAN == " ATIVO") {
                 if ($_valor_hora_LAN.$_valor_minu_LAN < $_valor_hora_global.$_valor_minu_global) {
@@ -86,10 +82,10 @@
                 echo '<img src="img/img_003_ping_v2_neutro.jpg">';
             }
         ?>
-    </div>
+    </section>
 
-    <div class="div_wan">
-    <h1 class="h1_wan">Status da internet (WAN)</h1>
+    <footer id="div_wan">
+    <h1 id="h1_wan">Status da internet (WAN)</h1>
     <?php
             if ($_valor_status_WAN == " ATIVO") {
                 if ($_valor_hora_WAN.$_valor_minu_WAN < $_valor_hora_global.$_valor_minu_global) {
@@ -108,7 +104,14 @@
             }
             
         ?>
-    </div>
+    </footer>    
+
+    <footer id="div_data">
+        <h1 id="h1_hora_certa" >Hora Certa</h1>
+        <?="<h2>$_data_atual_global</h2>"?>
+        <?="<h2>$_hora_atual_global</h2>"?>
+    </footer>
+
 </main>
 </body>
 </html>
