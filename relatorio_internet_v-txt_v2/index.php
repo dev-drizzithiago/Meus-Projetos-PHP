@@ -107,10 +107,13 @@
                 } 
             } else {
                 echo '<img src="img/img_003_ping_v2_neutro.jpg">';
-            }
-            
+            }            
         ?>
     </div>
+    <footer>
+        Autor: Thiago Alves Pinheiro
+        <a href="th_grifon@hotmail.com">th_grifon@mail.com</a>
+    </footer>
 </main>
 </body>
 </html>
