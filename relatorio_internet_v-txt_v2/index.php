@@ -112,7 +112,7 @@
     </div>
     <footer>
         Autor: Thiago Alves Pinheiro
-        <a href="th_grifon@hotmail.com">th_grifon@mail.com</a>
+        <p><a href="th_grifon@hotmail.com">th_grifon@mail.com</a></p>
     </footer>
 </main>
 </body>
