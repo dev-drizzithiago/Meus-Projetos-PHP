@@ -63,8 +63,8 @@
     <!--Seção data-->
     <div class="div_data">
         <h1 class="h1_hora_certa">Hora Certa</h1>
-        <?="<h2>$_data_atual_global</h2>"?>
-        <?="<h3>$_hora_atual_global</h3>"?>
+        <h2 id="h2_data_div_data"><?=$_data_atual_global?></h2>
+        <h3 id="h3_data_div_data"><?=$_hora_atual_global?></h3>
     </div>
 
     <!--Seção LAN-->
