@@ -14,19 +14,9 @@ main {
     padding: 2px solid #aaa;
 }
 
-
-footer#div_data {
-    background-color: #cecdcd;
-    text-align: center;
-    border: 3px inset #000000;     
-    border-radius: 50px;
-    margin-top: 10px;
-    margin-right: 200px;
-    margin-left: 200px;
-    margin-bottom: 10px;
-}
-
 section#div_lan {
+    display: block;
+    width: 400px;
     background-color: #ffffff;
     text-align: center;
     border: 3px inset #000000;
@@ -38,6 +28,8 @@ section#div_lan {
 }
 
 aside#div_wan {
+    display: block;
+    width: 400px;
     background-color: #ffffff;
     text-align: center;
     border: 3px inset #000000; 
@@ -45,6 +37,19 @@ aside#div_wan {
     margin-top: 10px;
     margin-right: 150px;
     margin-left: 150px;
+    margin-bottom: 10px;
+}
+
+footer#div_data {
+    display: block;
+    width: 40px;
+    background-color: #cecdcd;
+    text-align: center;
+    border: 3px inset #000000;     
+    border-radius: 50px;
+    margin-top: 10px;
+    margin-right: 200px;
+    margin-left: 200px;
     margin-bottom: 10px;
 }
 
