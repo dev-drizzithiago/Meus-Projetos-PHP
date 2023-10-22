@@ -34,7 +34,7 @@
     // Quebrando a variavel $_valor_horario_LAN
     $_valor_hora_array_LAN = explode(':', $_valor_horario_LAN);
     $_valor_hora_LAN = $_valor_hora_array_LAN[0];
-    $_valor_minu_LAN = $_valor_hora_array_LAN[1];
+    $_valor_minu_LAN = $_valor_hora_array_LAN[1] + 1;
     $_valor_segu_LAN = $_valor_hora_array_LAN[2];
     } else {
         $_valor_status_LAN[2] = "DESCONHECIDO";
@@ -50,7 +50,7 @@
     // Quebrando a variavel $_valor_horario_WAN
     $_valor_hora_array_WAN = explode(':', $_valor_horario_WAN);
     $_valor_hora_WAN = $_valor_hora_array_WAN[0];
-    $_valor_minu_WAN = $_valor_hora_array_WAN[1];
+    $_valor_minu_WAN = $_valor_hora_array_WAN[1] + 1;
     $_valor_segu_WAN = $_valor_hora_array_WAN[2];
     }  else {
         $_valor_status_WAN[2] = "DESCONHECIDO";
