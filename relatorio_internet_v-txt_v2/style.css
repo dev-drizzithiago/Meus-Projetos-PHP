@@ -9,47 +9,52 @@ main {
     background-color: #cecdcd;
     border: 3px inset #000000;
     border-radius: 50px;
-    margin-left: 300px;
-    margin-right: 300px;    
+    margin-left: 255px;
+    margin-right: 255px;    
     padding: 2px solid #aaa;
-}
-
-div.div_lan {
-    display: block;
-    background-color: #ffffff;
-    text-align: center;
-    border: 3px inset #000000;
-    border-radius: 50px;
-    margin-top: 10px;
-    margin-right: 150px;
-    margin-left: 150px;
-    margin-bottom: 10px;
-}
-
-div.div_wan {
-    display: block;
-    float: right;
-    background-color: #ffffff;
-    text-align: center;
-    border: 3px inset #000000; 
-    border-radius: 50px;
-    margin-top: 10px;
-    margin-right: 150px;
-    margin-left: 150px;
-    margin-bottom: 10px;
 }
 
 div.div_data {
     display: block;
-    float: left;
     background-color: #cecdcd;
     text-align: center;
     border: 3px inset #000000;     
     border-radius: 50px;
     margin-top: 10px;
-    margin-right: 200px;
-    margin-left: 200px;
+    margin-right: 130px;
+    margin-left: 130px;
     margin-bottom: 10px;
+}
+
+div.div_lan {
+    display: block;    
+    float: left;
+    width: auto;
+    background-color: #ffffff;
+    text-align: center;
+    border: 3px inset #000000;
+    border-radius: 50px;
+    
+}
+
+div.div_wan {
+    display: block;
+    float: right;
+    width: auto;
+    background-color: #ffffff;
+    text-align: center;
+    border: 3px inset #000000; 
+    border-radius: 50px;
+   
+}
+
+footer {
+    background-color: #ffffff;
+    text-align: center; 
+    border: 3px inset #000000;
+    border-radius: 50px;
+    
+    
 }
 
 h1.h1_lan {
