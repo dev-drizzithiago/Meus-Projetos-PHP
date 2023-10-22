@@ -15,7 +15,7 @@ main {
 }
 
 
-div.div_data {
+footer#div_data {
     background-color: #cecdcd;
     text-align: center;
     border: 3px inset #000000;     
@@ -26,7 +26,7 @@ div.div_data {
     margin-bottom: 10px;
 }
 
-div.div_lan {
+section#div_lan {
     background-color: #ffffff;
     text-align: center;
     border: 3px inset #000000;
@@ -37,7 +37,7 @@ div.div_lan {
     margin-bottom: 10px;
 }
 
-div.div_wan {
+aside#div_wan {
     background-color: #ffffff;
     text-align: center;
     border: 3px inset #000000; 
@@ -48,7 +48,7 @@ div.div_wan {
     margin-bottom: 10px;
 }
 
-h1.h1_lan {
+h1#h1_lan {
     background-color: #eeeded;
     text-align: center;
     border: 1px inset black;
@@ -56,7 +56,7 @@ h1.h1_lan {
     margin-left: 10px;
     margin-right: 10px;
 }
-h1.h1_wan {
+h1#h1_wan {
     background-color: #eeeded;
     text-align: center;
     border: 1px inset black;
