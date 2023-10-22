@@ -110,7 +110,7 @@
             }            
         ?>
     </div>
-    <footer>
+    <footer class="rodape">
         Autor: Thiago Alves Pinheiro
         <p><a href="th_grifon@hotmail.com">th_grifon@mail.com</a></p>
     </footer>
