@@ -15,7 +15,10 @@
 
     // Variaveis data/hora
     date_default_timezone_set('America/Sao_Paulo');
-        $_data_atual_global = date("d/m/Y");
+        $_data_atual_global = date('d/m/Y');
+        $_dia_atual_global = date('d');
+        $_mes_atual_global = date('m');
+        $_ano_atual_global = date('Y');
         $_hora_atual_global = date("H:i");
         $_valor_hora_global = date("H");
         $_valor_minu_global = date("i");
