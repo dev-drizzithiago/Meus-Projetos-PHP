@@ -30,10 +30,15 @@
     // Transformando os dados da LAN em array
     if (file_exists($_local_arq_LAN)) {
     $_valor_status_array_LAN = file_get_contents ($_local_arq_LAN);
-    $_status_LAN = explode("-", $_valor_status_array_LAN);
+    $_status_LAN = explode('-', $_valor_status_array_LAN);
     $_valor_data_LAN = $_status_LAN[0];
     $_valor_horario_LAN = $_status_LAN[1];
     $_valor_status_LAN = $_status_LAN[2];
+    // quebrando a variavel $_valor_data
+    $_valor_data_array = explode('/', $_valor_data_LAN);
+    $_valor_dia_LAN = $_valor_data_array[0];
+    $_valor_mes_LAN = $_valor_data_array[1];
+    $_valor_ano_LAN = $_valor_data_array[2];
     // Quebrando a variavel $_valor_horario_LAN
     $_valor_hora_array_LAN = explode(':', $_valor_horario_LAN);
     $_valor_hora_LAN = $_valor_hora_array_LAN[0];
@@ -50,6 +55,7 @@
     $_valor_data_WAN = $_status_WAN[0];
     $_valor_horario_WAN = $_status_WAN[1];
     $_valor_status_WAN = $_status_WAN[2];
+    // Quebrando a variavel $_valor_data_WAN
     // Quebrando a variavel $_valor_horario_WAN
     $_valor_hora_array_WAN = explode(':', $_valor_horario_WAN);
     $_valor_hora_WAN = $_valor_hora_array_WAN[0];
