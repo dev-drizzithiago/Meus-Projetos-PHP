@@ -130,6 +130,8 @@
         <p><a href="th_grifon@hotmail.com">th_grifon@mail.com</a></p>
     </footer>
 </main>
-<?="$_valor_mes_WAN.$_valor_dia_WAN.$_valor_hora_WAN.$_valor_minu_WAN < $_mes_atual_global.$_dia_atual_global.$_valor_hora_global.$_valor_minu_global"?>
+
+<!-- Teste para linhas de comando
+    <?="$_valor_mes_WAN.$_valor_dia_WAN.$_valor_hora_WAN.$_valor_minu_WAN < $_mes_atual_global.$_dia_atual_global.$_valor_hora_global.$_valor_minu_global"?> -->
 </body>
 </html>
