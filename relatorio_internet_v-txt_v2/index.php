@@ -19,6 +19,7 @@
         $_dia_atual_global = date('d');
         $_mes_atual_global = date('m');
         $_ano_atual_global = date('Y');
+        // horario
         $_hora_atual_global = date("H:i");
         $_valor_hora_global = date("H");
         $_valor_minu_global = date("i");
@@ -35,10 +36,10 @@
     $_valor_horario_LAN = $_status_LAN[1];
     $_valor_status_LAN = $_status_LAN[2];
     // quebrando a variavel $_valor_data
-    $_valor_data_array = explode('/', $_valor_data_LAN);
-    $_valor_dia_LAN = $_valor_data_array[0];
-    $_valor_mes_LAN = $_valor_data_array[1];
-    $_valor_ano_LAN = $_valor_data_array[2];
+    $_valor_data_array_LAN = explode('/', $_valor_data_LAN);
+    $_valor_dia_LAN = $_valor_data_array_LAN[0];
+    $_valor_mes_LAN = $_valor_data_array_LAN[1];
+    $_valor_ano_LAN = $_valor_data_array_LAN[2];
     // Quebrando a variavel $_valor_horario_LAN
     $_valor_hora_array_LAN = explode(':', $_valor_horario_LAN);
     $_valor_hora_LAN = $_valor_hora_array_LAN[0];
@@ -56,6 +57,10 @@
     $_valor_horario_WAN = $_status_WAN[1];
     $_valor_status_WAN = $_status_WAN[2];
     // Quebrando a variavel $_valor_data_WAN
+    $_valor_data_array_WAN = explode('/', $_valor_data_WAN);
+    $_valor_dia_WAN = $_valor_data_array_WAN[0];
+    $_valor_mes_WAN = $_valor_data_array_WAN[1];
+    $_valor_ano_WAN = $_valor_data_array_WAN[2];
     // Quebrando a variavel $_valor_horario_WAN
     $_valor_hora_array_WAN = explode(':', $_valor_horario_WAN);
     $_valor_hora_WAN = $_valor_hora_array_WAN[0];
@@ -79,23 +84,23 @@
     <!--Seção LAN-->
     <div class="div_lan">
     <h1 id="h1_lan">Status da Rede Local (LAN)</h1>
-        <?php
-            if ($_valor_status_LAN == " ATIVO") {
-                if ($_valor_hora_LAN.$_valor_minu_LAN < $_valor_hora_global.$_valor_minu_global) {
-                    echo '<img src="img/img_003_ping_v2_neutro.jpg">';
-                } else {
-                    echo '<img src="img/img_003_ping_v2_on.jpg">'; 
-                }
-            } elseif ($_valor_status_LAN == " INATIVO") {
-                if ($_valor_hora_LAN.$_valor_minu_LAN < $_valor_hora_global.$_valor_minu_global) {
-                    echo '<img src="img/img_003_ping_v2_neutro.jpg">';
-                } else {
-                    echo '<img src="img/img_003_ping_v2_off.jpg">';
-                }
-            }else {
-                echo '<img src="img/img_003_ping_v2_neutro.jpg">';
-            }
-        ?>
+    <?php
+    if ($_valor_status_LAN == " ATIVO") {
+        if ($_valor_mes_LAN.$_valor_dia_LAN.$_valor_hora_LAN.$_valor_minu_LAN < $_mes_atual_global.$_dia_atual_global.$_valor_hora_global.$_valor_minu_global) {
+            echo '<img src="img/img_003_ping_v2_neutro.jpg">';
+        } else {
+            echo '<img src="img/img_003_ping_v2_on.jpg">'; 
+        }
+    } elseif ($_valor_status_LAN == " INATIVO") {
+        if ($_valor_mes_LAN.$_valor_dia_LAN.$_valor_hora_LAN.$_valor_minu_LAN < $_mes_atual_global.$_dia_atual_global.$_valor_hora_global.$_valor_minu_global) {
+            echo '<img src="img/img_003_ping_v2_neutro.jpg">';
+        } else {
+            echo '<img src="img/img_003_ping_v2_off.jpg">';
+        }
+    }else {
+        echo '<img src="img/img_003_ping_v2_neutro.jpg">';
+    }
+    ?>
     </div>
     
     <!--Seção WAN-->
@@ -103,13 +108,13 @@
     <h1 id="h1_wan">Status da internet (WAN)</h1>
     <?php
             if ($_valor_status_WAN == " ATIVO") {
-                if ($_valor_hora_WAN.$_valor_minu_WAN < $_valor_hora_global.$_valor_minu_global) {
+                if ($_valor_mes_WAN.$_valor_dia_WAN.$_valor_hora_WAN.$_valor_minu_WAN < $_mes_atual_global.$_dia_atual_global.$_valor_hora_global.$_valor_minu_global) {
                     echo '<img src="img/img_003_ping_v2_neutro.jpg">';
                 } else {
                     echo '<img src="img/img_003_ping_v2_on.jpg">';
                 }
             } elseif ($_valor_status_WAN == " INATIVO") {
-                if ($_valor_hora_WAN.$_valor_minu_WAN < $_valor_hora_global.$_valor_minu_global) {
+                if ($_valor_mes_WAN.$_valor_dia_WAN.$_valor_hora_WAN.$_valor_minu_WAN < $_mes_atual_global.$_dia_atual_global.$_valor_hora_global.$_valor_minu_global) {
                     echo '<img src="img/img_003_ping_v2_neutro.jpg">';
                 } else {                    
                     echo '<img src="img/img_003_ping_v2_off.jpg">';
