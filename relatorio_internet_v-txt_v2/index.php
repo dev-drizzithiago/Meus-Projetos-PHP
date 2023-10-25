@@ -108,13 +108,13 @@
     <h1 id="h1_wan"> Status da internet (WAN) </h1>
     <?php
         if ($_valor_status_WAN == " ATIVO") {
-            if ($_valor_mes_WAN.$_valor_dia_WAN.$_valor_hora_WAN.$_valor_minu_WAN < $_mes_atual_global.$_dia_atual_global.$_valor_hora_global.$_valor_minu_global) {
+            if ($_valor_mes_WAN.$_valor_dia_WAN.$_valor_hora_WAN.$_valor_minu_WAN <= $_mes_atual_global.$_dia_atual_global.$_valor_hora_global.$_valor_minu_global) {
                 echo '<img src="img/img_003_ping_v2_neutro.jpg">';
             } else {
                 echo '<img src="img/img_003_ping_v2_on.jpg">';
             }
         } elseif ($_valor_status_WAN == " INATIVO") {
-            if ($_valor_mes_WAN.$_valor_dia_WAN.$_valor_hora_WAN.$_valor_minu_WAN < $_mes_atual_global.$_dia_atual_global.$_valor_hora_global.$_valor_minu_global) {
+            if ($_valor_mes_WAN.$_valor_dia_WAN.$_valor_hora_WAN.$_valor_minu_WAN <= $_mes_atual_global.$_dia_atual_global.$_valor_hora_global.$_valor_minu_global) {
                 echo '<img src="img/img_003_ping_v2_neutro.jpg">';
             } else {                    
                 echo '<img src="img/img_003_ping_v2_off.jpg">';
@@ -131,7 +131,8 @@
     </footer>
 </main>
 
-<!-- Teste para linhas de comando-->
-    <?="$_valor_mes_WAN.$_valor_dia_WAN.$_valor_hora_WAN.$_valor_minu_WAN < $_mes_atual_global.$_dia_atual_global.$_valor_hora_global.$_valor_minu_global"?> 
+<!-- Teste para linhas de comando
+    <?="$_valor_mes_WAN.$_valor_dia_WAN$_valor_hora_WAN$_valor_minu_WAN  $_mes_atual_global$_dia_atual_global$_valor_hora_global$_valor_minu_global"?> 
+    -->
 </body>
 </html>
