@@ -20,9 +20,10 @@
         $_mes_atual_global = date('m');
         $_ano_atual_global = date('Y');
         // horario
-        $_hora_atual_global = date("H:i");
+        $_hora_atual_global = date("H:i:s");
         $_valor_hora_global = date("H");
-        $_valor_minu_global = date("i");
+        $_valor_minu_global = '0'.date("i");
+        $_valor_secu_global = '0'.date('s');
 
     // Variaveis de local arquivo
     $_local_arq_LAN = "_status_LAN.log";
@@ -31,10 +32,7 @@
     // Corrigo o valor numerico que começa com "0". Quando o relogio muda o horário, tipo 14:02, o valor é dividido em "hora" e "minutos". Quando você coloca o minuto, por esta començando por "0" o PHP entende que é octdecimal.
     function _001_conver_oct_dec($_dados_OD) {
         $_001_convert_OD = $_dados_OD;
-        //var_dump($_dados_OD);
-        //var_dump($_001_convert_OD);
-        return '0'.$_001_convert_OD + 1;
-        
+        return '0'.$_001_convert_OD + 1;        
         echo $_001_convert_OD;
     }
 
@@ -54,7 +52,7 @@
     $_valor_hora_array_LAN = explode(':', $_valor_horario_LAN);
     $_valor_hora_LAN = $_valor_hora_array_LAN[0];
     $_valor_minu_LAN = _001_conver_oct_dec($_valor_hora_array_LAN[1]);
-    $_valor_segu_LAN = $_valor_hora_array_LAN[2];
+    $_valor_segu_LAN = _001_conver_oct_dec($_valor_hora_array_LAN[2]);
     } else {
         $_valor_status_LAN[2] = "DESCONHECIDO";
     }
@@ -75,7 +73,7 @@
     $_valor_hora_array_WAN = explode(':', $_valor_horario_WAN);
     $_valor_hora_WAN = $_valor_hora_array_WAN[0];
     $_valor_minu_WAN = _001_conver_oct_dec($_valor_hora_array_WAN[1]);
-    $_valor_segu_WAN = $_valor_hora_array_WAN[2];
+    $_valor_segu_WAN = _001_conver_oct_dec($_valor_hora_array_WAN[2]);
     }  else {
         $_valor_status_WAN[2] = "DESCONHECIDO";
     }
@@ -89,6 +87,7 @@
         <h1 class="h1_hora_certa">Hora Certa</h1>
         <h2 id="h2_data_div_data"><?=$_data_atual_global?></h2>
         <h3 id="h3_data_div_data"><?=$_hora_atual_global?></h3>
+        
     </div>
 
     <!--Seção LAN-->
