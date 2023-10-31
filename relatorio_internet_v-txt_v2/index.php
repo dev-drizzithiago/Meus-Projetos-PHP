@@ -141,9 +141,9 @@
     </footer>
 </main>
 
-<!-- Teste para linhas de comando-->
+<!-- Teste para linhas de comando
     <?="$_valor_mes_WAN$_valor_dia_WAN$_valor_hora_WAN$_valor_minu_WAN  $_mes_atual_global$_dia_atual_global$_valor_hora_global$_valor_minu_global"?> 
     <?=print_r($_valor_hora_array_WAN)?>
-    
+    -->
 </body>
 </html>
