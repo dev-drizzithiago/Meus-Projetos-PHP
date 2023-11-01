@@ -34,7 +34,7 @@
         $_001_convert_OD = $_dados_OD;
         return '0'.$_001_convert_OD + 1;        
         echo $_001_convert_OD;
-    }
+    }  
 
     // Transformando os dados da LAN em array
     if (file_exists($_local_arq_LAN)) {
@@ -77,6 +77,12 @@
     }  else {
         $_valor_status_WAN[2] = "DESCONHECIDO";
     }
+
+     //-------------------------------------------FUNÇÕES-------------------------------------------------------------------//
+     function _002_condicoes_LAN() {
+        
+     }
+
 ?>
 <!--img src="/relatorio_internet_v-txt_v2/img/img_001_ping_v2_off.jpg" alt="OFF"-->
 <!--CORPO HTML-->
