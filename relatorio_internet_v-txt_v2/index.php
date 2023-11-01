@@ -32,7 +32,7 @@
     // Corrigo o valor numerico que começa com "0". Quando o relogio muda o horário, tipo 14:02, o valor é dividido em "hora" e "minutos". Quando você coloca o minuto, por esta començando por "0" o PHP entende que é octdecimal.
     function _001_conver_oct_dec($_dados_OD) {
         $_001_convert_OD = $_dados_OD;
-        return '0'.$_001_convert_OD + 1;        
+        return '0'.$_001_convert_OD + 5;        
         echo $_001_convert_OD;
     }
 
@@ -116,22 +116,24 @@
     <div class="div_wan">
     <h1 id="h1_wan"> Status da internet (WAN) </h1>
     <?php
-        if ($_valor_status_WAN == " ATIVO") {
+        if ($_valor_status_WAN == " ATIVO") {            
             if ($_valor_mes_WAN.$_valor_dia_WAN.$_valor_hora_WAN.$_valor_minu_WAN < $_mes_atual_global.$_dia_atual_global.$_valor_hora_global.$_valor_minu_global) {
                 echo '<img src="img/img_003_ping_v2_neutro.jpg">';
             } else {
                 echo '<img src="img/img_003_ping_v2_on.jpg">';
             }
-        } elseif ($_valor_status_WAN == " INATIVO") {
+        } elseif ($_valor_status_WAN == " INATIVO") {  
             if ($_valor_mes_WAN.$_valor_dia_WAN.$_valor_hora_WAN.$_valor_minu_WAN < $_mes_atual_global.$_dia_atual_global.$_valor_hora_global.$_valor_minu_global) {
                 echo '<img src="img/img_003_ping_v2_neutro.jpg">';
+            }
+            elseif ($_valor_mes_WAN.$_valor_dia_WAN.$_valor_hora_WAN.$_valor_minu_WAN.$_valor_segu_WAN < $_mes_atual_global.$_dia_atual_global.$_valor_hora_global.$_valor_minu_global.$_valor_secu_global) {
+                echo '<img src="img/img_003_ping_v2_alerta.jpg">';
             } else {                    
                 echo '<img src="img/img_003_ping_v2_off.jpg">';
-            } 
+            }             
         } else {
             echo '<img src="img/img_003_ping_v2_neutro.jpg">';
-        } 
-           
+        }  
         ?>
     </div>
     <div class="rodape">
