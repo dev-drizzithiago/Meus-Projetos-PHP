@@ -22,8 +22,8 @@
         // horario
         $_hora_atual_global = date("H:i:s");
         $_valor_hora_global = date("H");
-        $_valor_minu_global = date("i");
-        $_valor_secu_global = date('s');
+        $_valor_minu_global = '0'.date("i");
+        $_valor_secu_global = '0'.date('s');
 
     // Variaveis de local arquivo
     $_local_arq_LAN = "_status_LAN.log";
@@ -147,9 +147,15 @@
     </footer>
 </main>
 
-<!-- Teste para linhas de comando
-    <?="$_valor_mes_WAN$_valor_dia_WAN$_valor_hora_WAN$_valor_minu_WAN  $_mes_atual_global$_dia_atual_global$_valor_hora_global$_valor_minu_global"?> 
+<!-- Teste para linhas de comando-->
+    <h3>Analise de informações<h3>
+    <?="Analisando informações contidas na LAN:</br>"?>
+    <?="$_valor_mes_LAN.$_valor_dia_LAN.$_valor_hora_WAN.$_valor_minu_LAN | $_mes_atual_global.$_dia_atual_global.$_valor_hora_global.$_valor_minu_global"?> 
+    <?=print_r($_valor_hora_array_LAN)?>
+    <?="</br>"?>
+    <?="Analisando informações contidas na WAN: </br>"?>
+    <?="$_valor_mes_WAN.$_valor_dia_WAN.$_valor_hora_WAN.$_valor_minu_WAN | $_mes_atual_global.$_dia_atual_global.$_valor_hora_global.$_valor_minu_global"?> 
     <?=print_r($_valor_hora_array_WAN)?>
-    -->
+    
 </body>
 </html>
