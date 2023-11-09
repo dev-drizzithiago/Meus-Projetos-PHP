@@ -32,7 +32,7 @@
     // Corrigo o valor numerico que começa com "0". Quando o relogio muda o horário, tipo 14:02, o valor é dividido em "hora" e "minutos". Quando você coloca o minuto, por esta començando por "0" o PHP entende que é octdecimal.
     function _001_conver_oct_dec($_dados_OD) {
         $_001_convert_OD = $_dados_OD;
-        return '0'.$_001_convert_OD + 2;        
+        return 'x'.$_001_convert_OD + 2;        
         echo $_001_convert_OD;
     }  
 
@@ -148,8 +148,16 @@
 </main>
 
 <!-- Teste para linhas de comando-->
-    <?="$_valor_mes_WAN$_valor_dia_WAN$_valor_hora_WAN$_valor_minu_WAN  $_mes_atual_global$_dia_atual_global$_valor_hora_global$_valor_minu_global"?> 
-    <?=print_r($_valor_hora_array_WAN)?>
+    <h3>Analise de informações<h3>
+    <?="Analisando informações contidas na LAN:</br>"?>
+    <?="$_valor_mes_LAN.$_valor_dia_LAN.$_valor_hora_WAN.$_valor_minu_LAN | 
+    $_mes_atual_global.$_dia_atual_global.$_valor_hora_global.$_valor_minu_global"?> 
+    <!--<?=print_r($_valor_hora_array_LAN)?>-->
+    <?="</br>"?>
+    <?="Analisando informações contidas na WAN: </br>"?>
+    <?="$_valor_mes_WAN.$_valor_dia_WAN.$_valor_hora_WAN.$_valor_minu_WAN | 
+    $_mes_atual_global.$_dia_atual_global.$_valor_hora_global.$_valor_minu_global"?> 
+    <!--<?=print_r($_valor_hora_array_WAN)?>-->
     
 </body>
 </html>
