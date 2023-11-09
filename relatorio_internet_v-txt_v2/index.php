@@ -22,8 +22,8 @@
         // horario
         $_hora_atual_global = date("H:i:s");
         $_valor_hora_global = date("H");
-        $_valor_minu_global = date("i");
-        $_valor_secu_global = date('s');
+        $_valor_minu_global = '0'.date("i");
+        $_valor_secu_global = '0'.date('s');
 
     // Variaveis de local arquivo
     $_local_arq_LAN = "_status_LAN.log";
