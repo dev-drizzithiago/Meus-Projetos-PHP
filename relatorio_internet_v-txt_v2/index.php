@@ -22,8 +22,8 @@
         // horario
         $_hora_atual_global = date("H:i:s");
         $_valor_hora_global = date("H");
-        $_valor_minu_global = '0'.date("i");
-        $_valor_secu_global = '0'.date('s');
+        $_valor_minu_global = 'x'.date("i");
+        $_valor_secu_global = 'x'.date('s');
 
     // Variaveis de local arquivo
     $_local_arq_LAN = "_status_LAN.log";
@@ -32,7 +32,7 @@
     // Corrigo o valor numerico que começa com "0". Quando o relogio muda o horário, tipo 14:02, o valor é dividido em "hora" e "minutos". Quando você coloca o minuto, por esta començando por "0" o PHP entende que é octdecimal.
     function _001_conver_oct_dec($_dados_OD) {
         $_001_convert_OD = $_dados_OD;
-        return '0'.$_001_convert_OD + 2;        
+        return 'x'.$_001_convert_OD + 2;        
         echo $_001_convert_OD;
     }  
 
