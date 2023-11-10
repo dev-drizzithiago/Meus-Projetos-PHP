@@ -68,7 +68,7 @@ div.div_wan {
 div.rodape {
     clear: both;
     text-align: center; 
-    height: 50px;
+    height: 60px;
     background-color: #ffffff;    
     border: 3px inset #000000;
     border-radius: 50px;
@@ -79,18 +79,17 @@ div.rodape {
     margin-right: 130px;
 }
 
-div#analise_desnv {
-    clear: both;
-    text-align: center; 
-    height: 50px;
-    background-color: #ffffff;    
-    border: 3px inset #000000;
+div.analise_desnv {
+    background-color: #ffffff;
+    text-align: center;
+    border: 3px inset #000000; 
     border-radius: 50px;
-    border-left: 130px;
-    border-right: 130px;
-    margin-top: 15px;
-    margin-left: 130px;
-    margin-right: 130px;
+    border-top: 15px;
+    border-bottom: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;   
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 h1.h1_lan {
