@@ -32,7 +32,7 @@
     // Corrigo o valor numerico que começa com "0". Quando o relogio muda o horário, tipo 14:02, o valor é dividido em "hora" e "minutos". Quando você coloca o minuto, por esta començando por "0" o PHP entende que é octdecimal.
     function _001_conver_oct_dec($_dados_OD) {
         $_001_convert_OD = str_pad($_dados_OD, 8, "0", STR_PAD_LEFT);
-        return sprintf("%02d",$_001_convert_OD + 2);
+        return sprintf("%02d",$_001_convert_OD + 5);
         echo $_001_convert_OD;
     }  
 
@@ -79,9 +79,13 @@
     }
 
      //-------------------------------------------FUNÇÕES-------------------------------------------------------------------//
-     function _002_condicoes_tempo() {
-        
-     }
+    function _002_condicoes_tempo_lan() {
+        $_valor_total_LAN = $_valor_mes_LAN.$_valor_dia_LAN.$_valor_hora_LAN.$_valor_minu_LAN;
+    }
+    
+    function _003_condicoes_tempo_lan() {
+        $_valor_total_WAN = $_valor_mes_LAN.$_valor_dia_LAN.$_valor_hora_LAN.$_valor_minu_LAN;
+    }
 
 ?>
 <!--img src="/relatorio_internet_v-txt_v2/img/img_001_ping_v2_off.jpg" alt="OFF"-->
