@@ -78,15 +78,24 @@
         $_valor_status_WAN[2] = "DESCONHECIDO";
     }
 
-     //-------------------------------------------FUNÇÕES-------------------------------------------------------------------//
-    function _002_condicoes_tempo_lan() {
-        $_valor_total_LAN = $_valor_mes_LAN.$_valor_dia_LAN.$_valor_hora_LAN.$_valor_minu_LAN;
-    }
     
-    function _003_condicoes_tempo_lan() {
-        $_valor_total_WAN = $_valor_mes_LAN.$_valor_dia_LAN.$_valor_hora_LAN.$_valor_minu_LAN;
+
+     //-------------------------------------------FUNÇÕES-------------------------------------------------------------------//
+    function _002_condicoes_tempo_lan($_valor_LAN, $_valor_global) {        
+        if ($$_valor_LAN < $_valor_global) {            
+            echo '<img src="img/img_003_ping_v2_neutro.jpg">';
+        } else {
+            echo '<img src="img/img_003_ping_v2_on.jpg">';        
+        }
     }
 
+    function _003_condicoes_tempo_lan($_valor_WAN) {
+
+    }
+
+    $_valor_total_global = $_mes_atual_global.$_dia_atual_global.$_valor_hora_global.$_valor_minu_global;
+    $_valor_total_LAN_log = $_valor_mes_LAN.$_valor_dia_LAN.$_valor_hora_LAN.$_valor_minu_LAN;
+    $_valor_total_WAN = $_valor_mes_LAN.$_valor_dia_LAN.$_valor_hora_LAN.$_valor_minu_LAN;
 ?>
 <!--img src="/relatorio_internet_v-txt_v2/img/img_001_ping_v2_off.jpg" alt="OFF"-->
 <!--CORPO HTML-->
@@ -105,11 +114,8 @@
     <h1 id="h1_lan">Status da Rede Local (LAN)</h1>
     <?php
     if ($_valor_status_LAN == " ATIVO") {
-        if ($_valor_mes_LAN.$_valor_dia_LAN.$_valor_hora_LAN.$_valor_minu_LAN < $_mes_atual_global.$_dia_atual_global.$_valor_hora_global.$_valor_minu_global) {
-            echo '<img src="img/img_003_ping_v2_neutro.jpg">';
-        } else {
-            echo '<img src="img/img_003_ping_v2_on.jpg">'; 
-        }
+        _002_condicoes_tempo_lan($_valor_total_LAN_log, $_valor_total_global);
+
     } elseif ($_valor_status_LAN == " INATIVO") {
         if ($_valor_mes_LAN.$_valor_dia_LAN.$_valor_hora_LAN.$_valor_minu_LAN < $_mes_atual_global.$_dia_atual_global.$_valor_hora_global.$_valor_minu_global) {
             echo '<img src="img/img_003_ping_v2_neutro.jpg">';
