@@ -148,16 +148,17 @@
 </main>
 
 <!-- Teste para linhas de comando-->
-    <h3>Analise de informações<h3>
-    <?="Analisando informações contidas na LAN: ==> "?>
-    <?="$_valor_mes_LAN.$_valor_dia_LAN.$_valor_hora_WAN.$_valor_minu_LAN | 
-    $_mes_atual_global.$_dia_atual_global.$_valor_hora_global.$_valor_minu_global"?> 
-    <!--<?=print_r($_valor_hora_array_LAN)?>-->
-    <?="</br>"?>
-    <?="Analisando informações contidas na WAN: ==> "?>
-    <?="$_valor_mes_WAN.$_valor_dia_WAN.$_valor_hora_WAN.$_valor_minu_WAN | 
-    $_mes_atual_global.$_dia_atual_global.$_valor_hora_global.$_valor_minu_global"?> 
-    <!--<?=print_r($_valor_hora_array_WAN)?>-->
-    
+    <div id="analise_desnv">
+        <h3>Analise de informações<h3>
+        <?="Analisando informações contidas na LAN: ==> "?>
+        <?="$_valor_mes_LAN.$_valor_dia_LAN.$_valor_hora_WAN.$_valor_minu_LAN | 
+        $_mes_atual_global.$_dia_atual_global.$_valor_hora_global.$_valor_minu_global"?> 
+        <!--<?=print_r($_valor_hora_array_LAN)?>-->
+        <?="</br>"?>
+        <?="Analisando informações contidas na WAN: ==> "?>
+        <?="$_valor_mes_WAN.$_valor_dia_WAN.$_valor_hora_WAN.$_valor_minu_WAN | 
+        $_mes_atual_global.$_dia_atual_global.$_valor_hora_global.$_valor_minu_global"?> 
+        <!--<?=print_r($_valor_hora_array_WAN)?>-->
+    </div>
 </body>
 </html>
