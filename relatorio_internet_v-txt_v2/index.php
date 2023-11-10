@@ -140,15 +140,9 @@
         }  
         ?>
     </div>
-    <div class="rodape">
-        Autor: Thiago Alves Pinheiro</br>
-        <a href="th_grifon@hotmail.com" target="_blank">th_grifon@mail.com</a></br>
-        <a href="https://github.com/dev-drizzithiago">github.com/dev-drizzithiago</a>
-    </footer>
-</main>
 
-<!-- Teste para linhas de comando-->
-    <div id="analise_desnv">
+    <!-- Teste para linhas de comando-->
+    <div class="analise_desnv">
         <h3>Analise de informações<h3>
         <?="Analisando informações contidas na LAN: ==> "?>
         <?="$_valor_mes_LAN.$_valor_dia_LAN.$_valor_hora_WAN.$_valor_minu_LAN | 
@@ -160,5 +154,14 @@
         $_mes_atual_global.$_dia_atual_global.$_valor_hora_global.$_valor_minu_global"?> 
         <!--<?=print_r($_valor_hora_array_WAN)?>-->
     </div>
+
+    <div class="rodape">
+        Autor: Thiago Alves Pinheiro</br>
+        <a href="th_grifon@hotmail.com" target="_blank">th_grifon@mail.com</a></br>
+        <a href="https://github.com/dev-drizzithiago">github.com/dev-drizzithiago</a>
+    </footer>
+</main>
+
+
 </body>
 </html>
