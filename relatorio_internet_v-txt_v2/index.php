@@ -76,9 +76,7 @@
     $_valor_segu_WAN = _001_conver_oct_dec($_valor_hora_array_WAN[2]);
     }  else {
         $_valor_status_WAN[2] = "DESCONHECIDO";
-    }
-
-    
+    }    
 
      //-------------------------------------------FUNÇÕES-------------------------------------------------------------------//
     function _002_condicoes_tempo_lan($_valor_LAN, $_valor_global) {        
@@ -149,7 +147,7 @@
     </div>
     <div class="rodape">
         Autor: Thiago Alves Pinheiro</br>
-        <a href="th_grifon@hotmail.com" target="_blank">th_grifon@mail.com</a></br>
+        <a href="th_grifon@hotmail.com" target="_blank">th_grifon@hotmail.com</a></br>
         <a href="https://github.com/dev-drizzithiago">github.com/dev-drizzithiago</a>
     </footer>
 </main>
