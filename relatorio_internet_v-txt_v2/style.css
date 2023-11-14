@@ -6,7 +6,8 @@ body {
 }
 
 main {
-    height: 600px;
+    width: 600px;
+    height: 400px;
     background-color: #cecdcd;
     border: 3px inset #000000;
     border-radius: 50px;
