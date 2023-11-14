@@ -99,8 +99,7 @@
     <div class="div_data">
         <h1 class="h1_hora_certa">Hora Certa</h1>
         <h2 id="h2_data_div_data"><?=$_data_atual_global?></h2>
-        <h3 id="h3_data_div_data"><?=$_hora_atual_global?></h3>
-        
+        <h3 id="h3_data_div_data"><?=$_hora_atual_global?></h3>        
     </div>
 
     <!--Seção LAN-->
@@ -108,13 +107,13 @@
     <h1 id="h1_lan">Status da Rede Local (LAN)</h1>
     <?php
     if ($_valor_status_LAN == " ATIVO") {
-        if ($_valor_total_LAN_log < $_valor_total_global) {
+        if ($_valor_total_LAN_log + 2 <= $_valor_total_global) {
             echo '<img src="img/img_003_ping_v2_alerta.jpg">';
         } else {
             echo '<img src="img/img_003_ping_v2_on.jpg">'; 
         }
     } elseif ($_valor_status_LAN == " INATIVO") {
-        if ($_valor_total_WAN_log < $_valor_total_global) {
+        if ($_valor_total_WAN_log + 1 <= $_valor_total_global) {
             echo '<img src="img/img_003_ping_v2_alerta.jpg">';
         } else {
             echo '<img src="img/img_003_ping_v2_off.jpg">';
@@ -130,13 +129,13 @@
     <h1 id="h1_wan"> Status da internet (WAN) </h1>
     <?php
         if ($_valor_status_WAN == " ATIVO") {            
-            if ($_valor_total_WAN_log < $_valor_total_global) {
+            if ($_valor_total_WAN_log + 2 <= $_valor_total_global) {
                 echo '<img src="img/img_003_ping_v2_neutro.jpg">';
             } else {
                 echo '<img src="img/img_003_ping_v2_on.jpg">';
             }
         } elseif ($_valor_status_WAN == " INATIVO") {  
-            if ($_valor_total_WAN_log < $_valor_total_global) {
+            if ($_valor_total_WAN_log + 1 <= $_valor_total_global) {
                 echo '<img src="img/img_003_ping_v2_neutro.jpg">';
             }
             else {                    
