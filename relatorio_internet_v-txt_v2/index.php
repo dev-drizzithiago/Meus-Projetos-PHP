@@ -76,7 +76,9 @@
     $_valor_segu_WAN = _001_conver_oct_dec($_valor_hora_array_WAN[2]);
     }  else {
         $_valor_status_WAN[2] = "DESCONHECIDO";
-    }    
+    }
+
+    
 
      //-------------------------------------------FUNÇÕES-------------------------------------------------------------------//
     function _002_condicoes_tempo_lan($_valor_LAN, $_valor_global) {        
@@ -89,7 +91,7 @@
     $_valor_total_LAN_log = $_valor_mes_LAN.$_valor_dia_LAN.$_valor_hora_LAN.$_valor_minu_LAN;
     $_valor_total_WAN_log = $_valor_mes_LAN.$_valor_dia_LAN.$_valor_hora_LAN.$_valor_minu_LAN;
 ?>
-<!--img src="/relatorio_internet_v-txt_v2/img/img_001_ping_v2_off.jpg" alt="OFF"-->
+<!--img src="./img/img_003_ping_v2_alerta.jpg" alt="OFF"-->
 <!--CORPO HTML-->
 <body>    
 <main>
@@ -97,8 +99,7 @@
     <div class="div_data">
         <h1 class="h1_hora_certa">Hora Certa</h1>
         <h2 id="h2_data_div_data"><?=$_data_atual_global?></h2>
-        <h3 id="h3_data_div_data"><?=$_hora_atual_global?></h3>
-        
+        <h3 id="h3_data_div_data"><?=$_hora_atual_global?></h3>        
     </div>
 
     <!--Seção LAN-->
@@ -107,13 +108,13 @@
     <?php
     if ($_valor_status_LAN == " ATIVO") {
         if ($_valor_total_LAN_log < $_valor_total_global) {
-            echo '<img src="img/img_003_ping_v2_neutro.jpg">';
+            echo '<img src="./img/img_003_ping_v2_neutro.jpg">';
         } else {
             echo '<img src="img/img_003_ping_v2_on.jpg">'; 
         }
     } elseif ($_valor_status_LAN == " INATIVO") {
-        if ($_valor_total_WAN_log + 3 < $_valor_total_global) {
-            echo '<img src="img/img_003_ping_v2_alerta.jpg">';
+        if ($_valor_total_WAN_log < $_valor_total_global) {
+            echo '<img src="./img/img_003_ping_v2_neutro.jpg">';
         } else {
             echo '<img src="img/img_003_ping_v2_off.jpg">';
         }
@@ -128,13 +129,13 @@
     <h1 id="h1_wan"> Status da internet (WAN) </h1>
     <?php
         if ($_valor_status_WAN == " ATIVO") {            
-            if ($_valor_mes_WAN.$_valor_dia_WAN.$_valor_hora_WAN.$_valor_minu_WAN < $_mes_atual_global.$_dia_atual_global.$_valor_hora_global.$_valor_minu_global) {
+            if ($_valor_total_WAN_log < $_valor_total_global) {
                 echo '<img src="img/img_003_ping_v2_neutro.jpg">';
             } else {
                 echo '<img src="img/img_003_ping_v2_on.jpg">';
             }
         } elseif ($_valor_status_WAN == " INATIVO") {  
-            if ($_valor_mes_WAN.$_valor_dia_WAN.$_valor_hora_WAN.$_valor_minu_WAN < $_mes_atual_global.$_dia_atual_global.$_valor_hora_global.$_valor_minu_global) {
+            if ($_valor_total_WAN_log < $_valor_total_global) {
                 echo '<img src="img/img_003_ping_v2_neutro.jpg">';
             }
             else {                    
@@ -147,7 +148,7 @@
     </div>
     <div class="rodape">
         Autor: Thiago Alves Pinheiro</br>
-        <a href="th_grifon@hotmail.com" target="_blank">th_grifon@hotmail.com</a></br>
+        <a href="th_grifon@hotmail.com" target="_blank">th_grifon@mail.com</a></br>
         <a href="https://github.com/dev-drizzithiago">github.com/dev-drizzithiago</a>
     </footer>
 </main>
@@ -156,12 +157,12 @@
     <div class="analise_desnv">
         <h3>Analise de informações<h3>
         <?="Analisando informações contidas na LAN: ==> "?>
-        <?="$_valor_mes_LAN.$_valor_dia_LAN.$_valor_hora_WAN.$_valor_minu_LAN | 
+        <?="$_valor_mes_LAN.$_valor_dia_LAN.$_valor_hora_WAN.$_valor_minu_LAN < 
         $_mes_atual_global.$_dia_atual_global.$_valor_hora_global.$_valor_minu_global"?> 
         <!--<?=print_r($_valor_hora_array_LAN)?>-->
         <?="</br>"?>
         <?="Analisando informações contidas na WAN: ==> "?>
-        <?="$_valor_mes_WAN.$_valor_dia_WAN.$_valor_hora_WAN.$_valor_minu_WAN | 
+        <?="$_valor_mes_WAN.$_valor_dia_WAN.$_valor_hora_WAN.$_valor_minu_WAN < 
         $_mes_atual_global.$_dia_atual_global.$_valor_hora_global.$_valor_minu_global"?> 
         <!--<?=print_r($_valor_hora_array_WAN)?>-->
     </div>
