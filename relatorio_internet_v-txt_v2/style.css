@@ -35,7 +35,7 @@ div.div_data {
     border-left: 15px;
 
     margin-top: 5px;
-    margin-left: 280px;    
+    margin-left: 330px;    
     margin-bottom: 5px;
    
 }
@@ -84,6 +84,7 @@ div.rodape {
     clear: both;
     text-align: center; 
     height: 60px;
+    width: 300px;
     background-color: #ffffff;    
 
     border: 3px inset #000000;
@@ -92,7 +93,7 @@ div.rodape {
     border-right: 130px;
 
     margin-top: 15px;
-    margin-left: 130px;
+    margin-left: 290px;
     margin-right: 130px;
 }
 
