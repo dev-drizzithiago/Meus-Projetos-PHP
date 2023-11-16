@@ -27,7 +27,6 @@ div.div_data {
     display: block;
     background-color: #fff;
     text-align: center;
-    text-size-adjust: 10px;
     
     border: 3px inset #000000;     
     border-radius: 50px;
@@ -45,7 +44,6 @@ div.div_lan {
     float: left;
     background-color: #ffffff;
     text-align: center;
-    text-size-adjust: 10px;
 
     border: 3px inset #000000;
     border-radius: 50px;
@@ -65,7 +63,6 @@ div.div_wan {
     float: right;
     background-color: #ffffff;
     text-align: center;
-    text-size-adjust: 10px;
 
     border: 3px inset #000000; 
     border-radius: 50px;
@@ -114,7 +111,6 @@ div.analise_desnv {
 }
 
 h1.h1_lan {
-    size: 8px;
     background-color: #eeeded;
     text-align: center;
 
