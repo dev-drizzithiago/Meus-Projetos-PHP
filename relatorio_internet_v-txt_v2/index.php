@@ -104,7 +104,7 @@
 
     <!--Seção LAN-->
     <div class="div_lan">
-    <h1 id="h1_lan">Status da Rede Local (LAN)</h1>
+    <h2 id="h2_lan">Status da Rede Local (LAN)</h2>
     <?php
     if ($_valor_status_LAN == " ATIVO") {
         if ($_valor_total_LAN_log < $_valor_total_global) {
@@ -126,7 +126,7 @@
     
     <!--Seção WAN-->
     <div class="div_wan">
-    <h1 id="h1_wan"> Status da internet (WAN) </h1>
+    <h2 id="h2_wan"> Status da internet (WAN) </h2>
     <?php
         if ($_valor_status_WAN == " ATIVO") {            
             if ($_valor_total_WAN_log < $_valor_total_global) {
