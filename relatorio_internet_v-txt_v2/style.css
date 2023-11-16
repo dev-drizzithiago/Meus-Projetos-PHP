@@ -6,7 +6,7 @@ body {
 }
 
 main {
-    width: 800px;
+    width: 850px;
     height: 600px;
     background-color: #cecdcd;
     border: 3px inset #000000;
@@ -20,16 +20,20 @@ main {
 
 div.div_data {
     height: 150px;
+    width: 320px;
     display: block;
     background-color: #fff;
     text-align: center;
+    text-size-adjust: 10px;
+    
     border: 3px inset #000000;     
     border-radius: 50px;
     border-right: 15px;
     border-left: 15px;
+
     margin-top: 15px;
-    margin-right: 130px;
-    margin-left: 130px;    
+    margin-right: 250px;
+    margin-left: 250px;    
     margin-bottom: 15px;
    
 }
@@ -39,6 +43,7 @@ div.div_lan {
     float: left;
     background-color: #ffffff;
     text-align: center;
+    text-size-adjust: 10px;
     border: 3px inset #000000;
     border-radius: 50px;
     border-top: 15px;
@@ -55,6 +60,7 @@ div.div_wan {
     float: right;
     background-color: #ffffff;
     text-align: center;
+    text-size-adjust: 10px;
     border: 3px inset #000000; 
     border-radius: 50px;
     border-top: 15px;
@@ -94,6 +100,7 @@ div.analise_desnv {
 }
 
 h1.h1_lan {
+    size: 8px;
     background-color: #eeeded;
     text-align: center;
     border: 1px inset black;
@@ -103,6 +110,7 @@ h1.h1_lan {
 }
 
 h1.h1_wan {
+    size: 8px;
     background-color: #eeeded;
     text-align: center;
     border: 1px inset black;
