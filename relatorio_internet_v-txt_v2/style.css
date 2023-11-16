@@ -6,7 +6,7 @@ body {
 }
 
 main {
-    width: 850px;
+    width: 840px;
     height: 600px;
     background-color: #cecdcd;
     border: 3px inset #000000;
@@ -50,8 +50,8 @@ div.div_lan {
     border-top: 15px;
     border-bottom: 15px;    
 
-    margin-left: 15px;    
-    margin-bottom: 15px;
+    margin-left: 5px;    
+    margin-bottom: 5px;
 
     padding-left: 15px;
     padding-right: 15px;
@@ -70,8 +70,8 @@ div.div_wan {
     border-top: 15px;
     border-bottom: 15px;
 
-    margin-right: 15px;
-    margin-bottom: 15px;   
+    margin-right: 5px;
+    margin-bottom: 5px;   
 
     padding-left: 15px;
     padding-right: 15px;
@@ -120,6 +120,9 @@ h1.h1_lan {
 
     margin-left: 15px;
     margin-right: 15px;
+
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 h1.h1_wan {
@@ -129,10 +132,10 @@ h1.h1_wan {
 
     border: 1px inset black;
     border-radius: 50px;
-
+    
     margin-left: 15px;
     margin-right: 15px;
-    
+
     padding-left: 15px;
     padding-right: 15px;
 }
