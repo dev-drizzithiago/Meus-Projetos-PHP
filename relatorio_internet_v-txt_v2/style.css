@@ -44,12 +44,15 @@ div.div_lan {
     background-color: #ffffff;
     text-align: center;
     text-size-adjust: 10px;
+
     border: 3px inset #000000;
     border-radius: 50px;
     border-top: 15px;
     border-bottom: 15px;    
+
     margin-left: 15px;    
     margin-bottom: 15px;
+
     padding-left: 15px;
     padding-right: 15px;
     
@@ -61,12 +64,15 @@ div.div_wan {
     background-color: #ffffff;
     text-align: center;
     text-size-adjust: 10px;
+
     border: 3px inset #000000; 
     border-radius: 50px;
     border-top: 15px;
     border-bottom: 15px;
+
     margin-right: 15px;
     margin-bottom: 15px;   
+
     padding-left: 15px;
     padding-right: 15px;
 
@@ -77,10 +83,12 @@ div.rodape {
     text-align: center; 
     height: 60px;
     background-color: #ffffff;    
+
     border: 3px inset #000000;
     border-radius: 50px;
     border-left: 130px;
     border-right: 130px;
+
     margin-top: 15px;
     margin-left: 130px;
     margin-right: 130px;
@@ -89,12 +97,15 @@ div.rodape {
 div.analise_desnv {
     background-color: #ffffff;
     text-align: center;
+
     border: 3px inset #000000; 
     border-radius: 50px;
     border-top: 15px;
     border-bottom: 15px;
+
     margin-right: 15px;
     margin-bottom: 15px;   
+
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -103,8 +114,10 @@ h1.h1_lan {
     size: 8px;
     background-color: #eeeded;
     text-align: center;
+
     border: 1px inset black;
     border-radius: 50px;
+
     margin-left: 15px;
     margin-right: 15px;
 }
@@ -113,10 +126,13 @@ h1.h1_wan {
     size: 8px;
     background-color: #eeeded;
     text-align: center;
+
     border: 1px inset black;
     border-radius: 50px;
+
     margin-left: 15px;
     margin-right: 15px;
+    
     padding-left: 15px;
     padding-right: 15px;
 }
