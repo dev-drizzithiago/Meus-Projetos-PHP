@@ -147,9 +147,9 @@
         ?>
     </div>
     <div class="rodape">
-        Autor: Thiago Alves Pinheiro</br>
+        Thiago Alves Pinheiro</br>
         <a href="th_grifon@hotmail.com" >th_grifon@mail.com</a></br>
-        <p>GITHUB: <a href="https://github.com/dev-drizzithiago" target="_blank"> dev-drizzithiago </a>
+        <a href="https://github.com/dev-drizzithiago" target="_blank"> dev-drizzithiago </a>
     </footer>
 </main>
 
