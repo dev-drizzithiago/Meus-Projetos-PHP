@@ -33,7 +33,7 @@
     // "minutos". Quando você coloca o minuto, por esta començando por "0" o PHP entende que é octdecimal.
     function _001_conver_oct_dec($_dados_OD) {
         $_001_convert_OD = str_pad($_dados_OD, 8, "0", STR_PAD_LEFT);
-        return sprintf("%02d",$_001_convert_OD + 15);
+        return sprintf("%02d",$_001_convert_OD + 1);
         echo $_001_convert_OD;
     }  
 
