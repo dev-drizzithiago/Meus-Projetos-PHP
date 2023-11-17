@@ -7,7 +7,7 @@ body {
 
 main {
     width: 840px;
-    height: 420px;
+    height: 400px;
     background-color: #cecdcd;
 
     border: 3px inset #000000;
@@ -80,7 +80,7 @@ div.div_wan {
 div.rodape {
     clear: both;
     text-align: center; 
-    height: 60px;
+    height: 55px;
     width: 300px;
     background-color: #ffffff;    
 
