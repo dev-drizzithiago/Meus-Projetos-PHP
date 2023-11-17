@@ -7,7 +7,7 @@ body {
 
 main {
     width: 800px;
-    height: 400px;
+    height: 450px;
     background-color: #cecdcd;
 
     border: 3px inset #000000;
@@ -22,8 +22,6 @@ main {
 
 div.div_data {
     float: inherit;
-    height: 156px;
-    width: 210px;
     display: block;
     background-color: #fff;
     text-align: center;
@@ -34,7 +32,8 @@ div.div_data {
     border-left: 15px;
 
     margin-top: 5px;
-    margin-left: 280px;    
+    margin-left: 35%;   
+    margin-right: 35%;
     margin-bottom: 5px;
    
 }
@@ -42,8 +41,8 @@ div.div_data {
 div.div_lan {
     display: block;    
     float: left;
-    height: 157px;
-    width: 316px;
+    height: 40%;
+    width: 40%;
     background-color: #ffffff;
     text-align: center;
 
@@ -63,8 +62,8 @@ div.div_lan {
 div.div_wan {
     display: block;
     float: right;
-    height: 157px;
-    width: 316px;
+    height: 40%;
+    width: 40%;
     background-color: #ffffff;
     text-align: center;
 
