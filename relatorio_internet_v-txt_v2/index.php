@@ -148,8 +148,8 @@
     </div>
     <div class="rodape">
         Autor: Thiago Alves Pinheiro</br>
-        <a href="th_grifon@hotmail.com" target="_blank">th_grifon@mail.com</a></br>
-        <a href="https://github.com/dev-drizzithiago">github.com/dev-drizzithiago</a>
+        <a href="th_grifon@hotmail.com" >th_grifon@mail.com</a></br>
+        <a href="https://github.com/dev-drizzithiago" target="_blank">github - dev-drizzithiago</a>
     </footer>
 </main>
 
