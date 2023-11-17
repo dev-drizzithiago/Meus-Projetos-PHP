@@ -6,7 +6,7 @@ body {
 }
 
 main {
-    width: 840px;
+    width: 800px;
     height: 400px;
     background-color: #cecdcd;
 
@@ -14,15 +14,15 @@ main {
     border-radius: 50px;
 
     margin-top: 15px;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 250px;
     margin-bottom: 15px;
     
     padding: 2px solid #aaa;
 }
 
 div.div_data {
-    height: 150px;
+    float: inherit;
+    height: 156px;
     width: 210px;
     display: block;
     background-color: #fff;
@@ -34,7 +34,7 @@ div.div_data {
     border-left: 15px;
 
     margin-top: 5px;
-    margin-left: 330px;    
+    margin-left: 280px;    
     margin-bottom: 5px;
    
 }
@@ -42,6 +42,8 @@ div.div_data {
 div.div_lan {
     display: block;    
     float: left;
+    height: 157px;
+    width: 316px;
     background-color: #ffffff;
     text-align: center;
 
@@ -50,8 +52,8 @@ div.div_lan {
     border-top: 15px;
     border-bottom: 15px;    
 
-    margin-left: 5px;    
-    margin-bottom: 5px;
+    margin-left: 7px;    
+    margin-bottom: 7px;
 
     padding-left: 25px;
     padding-right: 25px;
@@ -61,6 +63,8 @@ div.div_lan {
 div.div_wan {
     display: block;
     float: right;
+    height: 157px;
+    width: 316px;
     background-color: #ffffff;
     text-align: center;
 
@@ -69,8 +73,8 @@ div.div_wan {
     border-top: 15px;
     border-bottom: 15px;
 
-    margin-right: 5px;
-    margin-bottom: 5px;   
+    margin-right: 7px;
+    margin-bottom: 7px;   
 
     padding-left: 25px;
     padding-right: 25px;
@@ -90,7 +94,7 @@ div.rodape {
     border-right: 130px;
 
     margin-top: 15px;
-    margin-left: 290px;
+    margin-left: 240px;
     margin-right: 130px;
 }
 
@@ -105,7 +109,7 @@ div.analise_desnv {
     border-top: 15px;
     border-bottom: 15px;
 
-    margin-left: 300px;
+    margin-left: 350px;
     margin-bottom: 15px;   
 
     padding-left: 15px;
