@@ -26,8 +26,8 @@
         $_valor_secu_global = date('s');
 
     // Variaveis de local arquivo
-    $_local_arq_LAN = "_status_LAN.log" ?? "01-01-1900";
-    $_local_arq_WAN = "_status_WAN.log" ?? "01-01-1900";
+    $_local_arq_LAN = "_status_LAN.log" ? "01-01-1900";
+    $_local_arq_WAN = "_status_WAN.log" ? "01-01-1900";
 
     // Corrigo o valor numerico que começa com "0". Quando o relogio muda o horário, tipo 14:02, o valor é dividido em "hora" e 
     // "minutos". Quando você coloca o minuto, por esta començando por "0" o PHP entende que é octdecimal.
